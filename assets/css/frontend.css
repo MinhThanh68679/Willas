@@ -772,6 +772,19 @@ header.is_scrolled::after {
     display: flex;
     align-items: center;
     gap: 0.2604rem;
+    padding-left: 1.3542rem;
+    position: relative;
+}
+
+.btn_lang::before {
+    content: '';
+    position: absolute;
+    width: 1px;
+    height: 60%;
+    background: rgba(255, 255, 255, 0.5);
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
 }
 
 .btn_lang span {
@@ -781,6 +794,7 @@ header.is_scrolled::after {
 .wrap_btn_search_lang {
     display: flex;
     align-items: center;
+    gap: 1.3542rem;
 }
 
 /* ---------------------------- */
