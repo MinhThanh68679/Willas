@@ -1,0 +1,1419 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>WILLAS</title>
+    <link rel="stylesheet" href="../assets/css/flatsome-core.min.css">
+    <link rel="stylesheet" href="../assets/css/thuythu-core.min.css">
+    <link rel="stylesheet" href="../assets/css/frontend.css">
+    <link rel="stylesheet" href="../assets/css/stylesheet.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+</head>
+
+<body>
+    <!-- header -->
+    <header>
+        <div class="header_pc">
+            <div class="header-wrapper">
+                <div class="header_left">
+                    <a href="./index.html" class="header_logo">
+                        <img src="../assets/images/logo-header.svg" alt="Willas">
+                    </a>
+                </div>
+                <nav class="header_nav">
+                    <ul>
+                        <li><a href="#">Products</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Applications</a></li>
+                        <li><a href="#">Brand Agent</a></li>
+                        <li><a href="#">News</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </nav>
+                <div class="header_right">
+                    <div class="wrap_btn_search_lang">
+                        <div class="btn_search">
+                            <a href="#search-lightbox" data-open="#search-lightbox" data-focus="input.search-field" aria-label="Search">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                    <path d="M10.875 18.75C15.2242 18.75 18.75 15.2242 18.75 10.875C18.75 6.52576 15.2242 3 10.875 3C6.52576 3 3 6.52576 3 10.875C3 15.2242 6.52576 18.75 10.875 18.75Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M16.4434 16.4434L20.9997 20.9997" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="btn_lang fs-16">
+                            <div class="icon_svg_lang">
+                                <svg width="27" height="27" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M13.5 23.625C19.0919 23.625 23.625 19.0919 23.625 13.5C23.625 7.90812 19.0919 3.375 13.5 3.375C7.90812 3.375 3.375 7.90812 3.375 13.5C3.375 19.0919 7.90812 23.625 13.5 23.625Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M3.95117 10.125H23.0479" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M3.95215 16.875H23.0487" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M13.5 23.3532C15.83 23.3532 17.7188 18.9418 17.7188 13.5C17.7188 8.05823 15.83 3.6468 13.5 3.6468C11.17 3.6468 9.28125 8.05823 9.28125 13.5C9.28125 18.9418 11.17 23.3532 13.5 23.3532Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+                            <span>English</span>
+                        </div>
+                    </div>
+                    <div class="wrap_btn_option">
+                        <a href="#" class="dd_trigger">
+                            <div class="group_dd_trigger">
+                                <div class="icon_dd_trigger">
+                                    <img src="./assets/images/buildings-white.svg" alt="">
+                                </div>
+                                <span class="dd_trigger_text">Global Branches</span>
+                            </div>
+                            
+                            <div class="icon_chevron_down">
+                                <img src="./assets/images/caretdown.svg" alt="">
+                            </div>
+                        </a>
+                        <div class="dd_menu">
+                            <div class="dd_menu_inner">
+                                <a href="#" class="dd_item active" data-value="global">
+                                    <div class="icon_dd_trigger">
+                                        <img src="./assets/images/buildings.svg" alt="">
+                                    </div>
+                                    <span class="dd_trigger_text">Global Branches</span>
+                                </a>
+                                <a href="#" class="dd_item" data-value="individual">
+                                    <div class="icon_dd_trigger">
+                                        <img src="./assets/images/users.svg" alt="">
+                                    </div>
+                                    <span class="dd_trigger_text">Individual Buyers</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="header_mobile">
+            <div class="header-wrapper">
+                <button class="btn_menu_mobi">
+                    <img src="./assets/images/icon_menu_dark.svg" alt="menu">
+                </button>
+
+                <div class="header_left">
+                    <a href="./index.html" class="header_logo">
+                        <img src="./assets/images/logo.png" alt="Bachvietmed">
+                    </a>
+                </div>
+
+                <div class="header_right">
+                    <div class="btn_search">
+                        <a
+                            href="#search-lightbox"
+                            data-open="#search-lightbox"
+                            data-focus="input.search-field"
+                            aria-label="Search"
+                        >
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <path
+                                        d="M10.875 18.75C15.2242 18.75 18.75 15.2242 18.75 10.875C18.75 6.52576 15.2242 3 10.875 3C6.52576 3 3 6.52576 3 10.875C3 15.2242 6.52576 18.75 10.875 18.75Z"
+                                        stroke="white"
+                                        stroke-width="1.5"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                />
+                                <path
+                                        d="M16.4434 16.4434L20.9997 20.9997"
+                                        stroke="white"
+                                        stroke-width="1.5"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                />
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="btn_lang">
+                        <img src="./assets/images/flag_vn.png" alt="VN">
+                        <span>VN</span>
+                        <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M8.125 3.75L5 6.875L1.875 3.75" stroke="white" stroke-linecap="round"
+                                stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <a href="#" class="btn_link_page fs-18">
+                        Liên hệ tư vấn
+                    </a>
+                </div>
+            </div>
+        </div>
+
+    </header>
+    <nav class="header_nav mobile_menu">
+        <ul>
+            <li><a href="#">Products</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Applications</a></li>
+            <li><a href="#">Brand Agent</a></li>
+            <li><a href="#">News</a></li>
+            <li><a href="#">Contact</a></li>
+            <div class="closed_menu">
+                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="feather feather-x">
+                    <line x1="18" y1="6" x2="6" y2="18"></line>
+                    <line x1="6" y1="6" x2="18" y2="18"></line>
+                </svg>
+            </div>
+        </ul>
+
+    </nav>
+    <div id="search-lightbox" class="mfp-hide dark text-center">
+        <div class="search-inner">
+            <div class="search-lightbox-title">Chúng tôi có thể giúp bạn?</div>
+            <form role="search" method="get" class="searchform" action="/">
+                <div class="flex-row relative">
+                    <div class="flex-col flex-grow">
+                        <input
+                                type="search"
+                                class="search-field mb-0"
+                                name="s"
+                                placeholder="Search..."
+                                autocomplete="off"
+                        />
+                    </div>
+                    <div class="flex-col">
+                        <button
+                                type="submit"
+                                class="ux-search-submit submit-button secondary button icon mb-0"
+                        >
+                            <span class="icon_search">
+                                <svg
+                                        width="24"
+                                        height="24"
+                                        viewBox="0 0 24 24"
+                                        fill="none"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                >
+                                    <path
+                                            d="M23.9375 0.0625V23.9375H0.0625V0.0625H23.9375Z"
+                                            stroke="black"
+                                            stroke-width="0.125"
+                                    />
+                                    <path
+                                            d="M10.875 18.75C15.2242 18.75 18.75 15.2242 18.75 10.875C18.75 6.52576 15.2242 3 10.875 3C6.52576 3 3 6.52576 3 10.875C3 15.2242 6.52576 18.75 10.875 18.75Z"
+                                            stroke="black"
+                                            stroke-width="1.5"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                    />
+                                    <path
+                                            d="M16.4434 16.4434L20.9997 20.9997"
+                                            stroke="black"
+                                            stroke-width="1.5"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                    />
+                                </svg>
+                            </span>
+                        </button>
+                    </div>
+                </div>
+            </form>
+            <div class="search-keywords">
+                <a href="javascript:void(0)">Willas</a>
+                <a href="javascript:void(0)">Lorem</a>
+                <a href="javascript:void(0)">Lorem Ipsum</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- main -->
+    <main id="main">
+        <section class="home_1 relative">
+            <video src="../assets/images/WILLAS_banner.mp4" autoplay muted playsinline loop></video>
+            <div class="home_banner_content text-center absolute">
+                <h1 class="home_banner_title uppercase style_color_text_banner mb-0">WILLAS</h1>
+                <div class="home_banner_desc style_color_text_banner lh-100p">Willas Components – Elevating the Quality of Vietnamese Products.</div>
+                <div class="wrap_btn flex justify-center align-center">
+                    <a href="#" class="btn style_btn_1 flex items-center">
+                        Explore more
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M6 18L18 6" stroke="#3D54A0" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M8.25 6H18V15.75" stroke="#3D54A0" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="home_2">
+            <div class="row clearfix">
+                <div class="col large-6 medium-6 small-12">
+                    <div class="home_2_image relative">
+                        <img src="../assets/images/mask-group-home-2.png" alt="">
+                    </div>
+                </div>
+                <div class="col large-6 medium-6 small-12">
+                    <div class="home_2_content">
+                        <div class="group_title">
+                            <h2 class="title uppercase style_color_1 mb-0">about us</h2>
+                            <div class="title_sub style_color_1 lh-100p">Willas Electronic Vietnam</div>
+                        </div>
+                        <div class="desc">Since 2022, Willas Electronic Vietnam has been empowering customer growth by solving supply chain challenges in Vietnam’s booming market.</div>
+                        <div class="wrap_btn">
+                            <a href="#" class="btn style_btn_2 flex items-center">
+                                Explore more
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M6 18L18 6" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M8.25 6H18V15.75" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="sec_marquee_img relative">
+            <div class="marquee_container">
+                <div class="marquee_img_wrap marquee_content" id="marqueeContent">
+                    <div class="marquee_img marquee_track" id="track1">
+                        <div class="img_item">
+                            <img src="../assets/images/marquee-rectangle-18481.jpg" alt="">
+                        </div>
+                        <div class="img_item">
+                            <img src="../assets/images/marquee-rectangle-18482.jpg" alt="">
+                        </div>
+                        <div class="img_item">
+                            <img src="../assets/images/marquee-rectangle-18483.jpg" alt="">
+                        </div>
+                        <div class="img_item">
+                            <img src="../assets/images/marquee-rectangle-18484.jpg" alt="">
+                        </div>
+                        <div class="img_item">
+                            <img src="../assets/images/marquee-rectangle-18480.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="marquee_img marquee_track" id="track2">
+                        <div class="img_item">
+                            <img src="../assets/images/marquee-rectangle-18481.jpg" alt="">
+                        </div>
+                        <div class="img_item">
+                            <img src="../assets/images/marquee-rectangle-18482.jpg" alt="">
+                        </div>
+                        <div class="img_item">
+                            <img src="../assets/images/marquee-rectangle-18483.jpg" alt="">
+                        </div>
+                        <div class="img_item">
+                            <img src="../assets/images/marquee-rectangle-18484.jpg" alt="">
+                        </div>
+                        <div class="img_item">
+                            <img src="../assets/images/marquee-rectangle-18480.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="home_3">
+            <div class="row clearfix">
+                <div class="col large-12 medium-12 small-12">
+                    <div class="home_3_title flex justify-between items-end">
+                        <div class="group_title">
+                            <h2 class="title uppercase style_color_1 mb-0">Our Main Business</h2>
+                            <div class="desc">
+                                Since 2022, Willas Electronic Vietnam has been empowering customer <br>growth by solving supply chain challenges in Vietnam’s booming market.
+                            </div>
+                        </div>
+                        <div class="wrap_btn">
+                            <a href="#" class="btn style_btn_2 flex items-center">
+                                Explore more
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M6 18L18 6" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M8.25 6H18V15.75" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="home_3_wrapper flex">
+                        <div class="home_3_item">
+                            <div class="icon_wrap">
+                                <div class="icon_circle">
+                                    <img src="../assets/images/092bf852ffa3389d2acd98d1c725b67916a51a3e.gif" alt="">
+                                </div>
+                            </div>
+                            <div class="card_content">
+                                <h3 class="title style_color_1 mb-0">Semiconductor and Electronic Component Distribution</h3>
+                                <div class="desc">Comprehensive supply of both active and passive components, with a strong design-in and technical support focus.</div>
+                            </div>
+                        </div>
+                        <div class="home_3_item">
+                            <div class="icon_wrap">
+                                <div class="icon_circle">
+                                    <img src="../assets/images/11a2dc28784836f025c4515546355c084b593e1e.gif" alt="">
+                                </div>
+                            </div>
+                            <div class="card_content">
+                                <h3 class="title style_color_1 mb-0">Total Solution <br>Provider</h3>
+                                <div class="desc">Comprehensive supply of both active and passive components, with a strong design-in and technical support focus.</div>
+                            </div>
+                        </div>
+                        <div class="home_3_item">
+                            <div class="icon_wrap">
+                                <div class="icon_circle">
+                                    <img src="../assets/images/11a2dc28784836f025c4515546355c084b593e1e.gif" alt="">
+                                </div>
+                            </div>
+                            <div class="card_content">
+                                <h3 class="title style_color_1 mb-0">Procurement & <br>Supply-Chain <br>Partnership</h3>
+                                <div class="desc">Comprehensive supply of both active and passive components, with a strong design-in and technical support focus.</div>
+                            </div>
+                        </div>
+                    </div>  
+                </div>
+            </div>
+        </section>
+
+        <section class="home_4">
+            <div class="row clearfix">
+                <div class="col large-12 medium-12 small-12">
+                    <div class="why_choose relative">
+                        <div class="why_choose_image">
+                            <img src="../assets/images/shutterstock_2177147503-1.png" alt="">
+                        </div>
+                        <div class="why_choose_body">
+                            <div class="group_title">
+                                <h2 class="title uppercase style_color_1 mb-0">why choose Willas?</h2>
+                            </div>
+                            <div class="why_choose_wrap">
+                                <div class="why_choose_item">
+                                    <div class="icon">
+                                        <img src="../assets/images/mask-group-home-4.svg" alt="">
+                                    </div>
+                                    <div class="desc">Experience</div>
+                                </div>
+                                <div class="why_choose_item">
+                                    <div class="icon">
+                                        <img src="../assets/images/mask-group-home-4-1.svg" alt="">
+                                    </div>
+                                    <div class="desc">Adaptability</div>
+                                </div>
+                                <div class="why_choose_item">
+                                    <div class="icon">
+                                        <img src="../assets/images/mask-group-home-4-2.svg" alt="">
+                                    </div>
+                                    <div class="desc">Agility</div>
+                                </div>
+                                <div class="why_choose_item">
+                                    <div class="icon">
+                                        <img src="../assets/images/mask-group-home-4-3.svg" alt="">
+                                    </div>
+                                    <div class="desc">Versatility</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="home_5">
+            <div class="row clearfix">
+                <div class="col large-12 medium-12 small-12">
+                    <div class="desc desc_home_5 fs-50 lh-58">
+                        Guided by "Quality First, Service Supreme," we deliver comprehensive solutions that earn global trust. We commit to continuous innovation, providing cutting-edge, high-quality, and reasonably priced products worldwide.
+                    </div>
+                    <div class="wrap_btn">
+                        <a href="#" class="btn style_btn_2 flex items-center">
+                            Explore more
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M6 18L18 6" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M8.25 6H18V15.75" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="home_6">
+            <div class="row clearfix">
+                <div class="col large-12 medium-12 small-12">
+                    <div class="group_title flex justify-center items-center">
+                        <h2 class="title uppercase style_color_1 mb-0">our BRANDS</h2>
+                    </div>
+                    <div class="swiper slider_our_brand">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="item_brand">
+                                    <div class="logo_brand">
+                                        <img src="../assets/images/logo-home-image-201-1.png" alt="">
+                                    </div>
+                                    <div class="content_brand">
+                                        <h3 class="title mb-0">Arlitech Electronic Corp</h3>
+                                        <div class="desc fs-16 lh-22">Main product: Inductor</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="item_brand">
+                                    <div class="logo_brand">
+                                        <img src="../assets/images/logo-home-image-201-2.png" alt="">
+                                    </div>
+                                    <div class="content_brand">
+                                        <h3 class="title mb-0">Kuan Kun Electronic Enterprise Co., Ltd.</h3>
+                                        <div class="desc fs-16 lh-22">Main product: Aluminum electrolytic capacitors.</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="item_brand">
+                                    <div class="logo_brand">
+                                        <img src="../assets/images/logo-home-image-201-3.png" alt="">
+                                    </div>
+                                    <div class="content_brand">
+                                        <h3 class="title mb-0">Artery Technology Corporation</h3>
+                                        <div class="desc fs-16 lh-22">Main product: 32-bit microcontrollers (MCUs).</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="item_brand">
+                                    <div class="logo_brand">
+                                        <img src="../assets/images/logo-home-image-201-4.png" alt="">
+                                    </div>
+                                    <div class="content_brand">
+                                        <h3 class="title mb-0">inergy Technology</h3>
+                                        <div class="desc fs-16 lh-22">Main product: BLDC motor drivers</div>
+                                    </div>
+                                </div>
+                            </div>
+                                              
+                            <div class="swiper-slide">
+                                <div class="item_brand">
+                                    <div class="logo_brand">
+                                        <img src="../assets/images/logo-home-image-201-1.png" alt="">
+                                    </div>
+                                    <div class="content_brand">
+                                        <div class="name_brand">Arlitech Electronic Corp</div>
+                                        <div class="desc fs-16 lh-22">Main product: Inductor</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="item_brand">
+                                    <div class="logo_brand">
+                                        <img src="../assets/images/logo-home-image-201-2.png" alt="">
+                                    </div>
+                                    <div class="content_brand">
+                                        <div class="name_brand">Kuan Kun Electronic Enterprise Co., Ltd.</div>
+                                        <div class="desc">Main product: Aluminum electrolytic capacitors.</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="item_brand">
+                                    <div class="logo_brand">
+                                        <img src="../assets/images/logo-home-image-201-3.png" alt="">
+                                    </div>
+                                    <div class="content_brand">
+                                        <div class="name_brand">Artery Technology Corporation</div>
+                                        <div class="desc">Main product: 32-bit microcontrollers (MCUs).</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="item_brand">
+                                    <div class="logo_brand">
+                                        <img src="../assets/images/logo-home-image-201-4.png" alt="">
+                                    </div>
+                                    <div class="content_brand">
+                                        <div class="name_brand">inergy Technology</div>
+                                        <div class="desc">Main product: BLDC motor drivers</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="scrollbar_pagination">
+                            <div class="scrollbar_bottom desktop_display_pagi">
+                                <div class="swiper-scrollbar"></div>
+                                <div class="wrap_btn">
+                                    <a href="#" class="btn style_btn_2 flex items-center">
+                                        Explore more
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M6 18L18 6" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M8.25 6H18V15.75" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="home_7">
+            <div class="row clearfix">
+                <div class="col large-12 medium-12 small-12">
+                    <div class="group_title">
+                        <h2 class="title uppercase style_color_1 w-100 mb-0">Feature Products</h2>
+                    </div>
+                    <div class="swiper slider_feature_product">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="item_feature_product item_hover relative">
+                                    <a class="wrap_link" href="#"></a>
+                                    <h3 class="title mb-0">Crystal</h3>
+                                    <div class="box_img hover_zoom">
+                                        <img src="../assets/images/mb354-1-4.png" alt="">
+                                    </div>
+                                    <div class="wrap_btn flex items-center">
+                                        <a href="#" class="btn style_btn_unset flex items-center">
+                                            View Detail
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M6 18L18 6" stroke="#3D54A0" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                <path d="M8.25 6H18V15.75" stroke="#3D54A0" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                        </a>
+                                        <a href="#" class="btn style_btn_unset flex items-center">
+                                            Datasheet
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M6 18L18 6" stroke="#3D54A0" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                <path d="M8.25 6H18V15.75" stroke="#3D54A0" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="item_feature_product item_hover relative">
+                                    <a class="wrap_link" href="#"></a>
+                                    <h3 class="title mb-0">Logic</h3>
+                                    <div class="box_img hover_zoom">
+                                        <img src="../assets/images/mb354-1-1.png" alt="">
+                                    </div>
+                                    <div class="wrap_btn flex items-center">
+                                        <a href="#" class="btn style_btn_unset flex items-center">
+                                            View Detail
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M6 18L18 6" stroke="#3D54A0" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                <path d="M8.25 6H18V15.75" stroke="#3D54A0" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                        </a>
+                                        <a href="#" class="btn style_btn_unset flex items-center">
+                                            Datasheet
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M6 18L18 6" stroke="#3D54A0" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                <path d="M8.25 6H18V15.75" stroke="#3D54A0" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="item_feature_product item_hover relative">
+                                    <a class="wrap_link" href="#"></a>
+                                    <h3 class="title mb-0">Rectifier</h3>
+                                    <div class="box_img hover_zoom">
+                                        <img src="../assets/images/mb354-1-2.png" alt="">
+                                    </div>
+                                    <div class="wrap_btn flex items-center">
+                                        <a href="#" class="btn style_btn_unset flex items-center">
+                                            View Detail
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M6 18L18 6" stroke="#3D54A0" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                <path d="M8.25 6H18V15.75" stroke="#3D54A0" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                        </a>
+                                        <a href="#" class="btn style_btn_unset flex items-center">
+                                            Datasheet
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M6 18L18 6" stroke="#3D54A0" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                <path d="M8.25 6H18V15.75" stroke="#3D54A0" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="item_feature_product item_hover relative">
+                                    <a class="wrap_link" href="#"></a>
+                                    <h3 class="title mb-0">Transistor</h3>
+                                    <div class="box_img hover_zoom">
+                                        <img src="../assets/images/mb354-1-3.png" alt="">
+                                    </div>
+                                    <div class="wrap_btn flex items-center">
+                                        <a href="#" class="btn style_btn_unset flex items-center">
+                                            View Detail
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M6 18L18 6" stroke="#3D54A0" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                <path d="M8.25 6H18V15.75" stroke="#3D54A0" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                        </a>
+                                        <a href="#" class="btn style_btn_unset flex items-center">
+                                            Datasheet
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M6 18L18 6" stroke="#3D54A0" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                <path d="M8.25 6H18V15.75" stroke="#3D54A0" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="item_feature_product item_hover relative">
+                                    <a class="wrap_link" href="#"></a>
+                                    <h3 class="title mb-0">Crystal</h3>
+                                    <div class="box_img hover_zoom">
+                                        <img src="../assets/images/mb354-1-4.png" alt="">
+                                    </div>
+                                    <div class="wrap_btn flex items-center">
+                                        <a href="#" class="btn style_btn_unset flex items-center">
+                                            View Detail
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M6 18L18 6" stroke="#3D54A0" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                <path d="M8.25 6H18V15.75" stroke="#3D54A0" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                        </a>
+                                        <a href="#" class="btn style_btn_unset flex items-center">
+                                            Datasheet
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M6 18L18 6" stroke="#3D54A0" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                <path d="M8.25 6H18V15.75" stroke="#3D54A0" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="group_pagination pc-hide">
+                            <div class="swiper-pagination"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="home_8">
+            <div class="row clearfix">
+                <div class="col large-12 medium-12 small-12">
+                    <div class="group_title flex items-center">
+                        <h2 class="title uppercase text-white w-100 mb-0">applications</h2>
+                        <div class="desc text-white">
+                            Guided by "Quality First, Service Supreme," we deliver comprehensive solutions that earn global trust. We commit to continuous innovation, providing cutting-edge, high-quality, and reasonably priced products worldwide.
+                        </div>
+                    </div>
+                    <div class="swiper slider_application">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="item_application">
+                                    <div class="image">
+                                        <img src="../assets/images/490c4c563df57ddc73d3798cbf17427e4e7561f2.jpg" alt="">
+                                    </div>
+                                    <div class="content">
+                                        <h3 class="name text-center text-white mb-0">Home Appliance</h3>
+                                        <div class="wrap_btn">
+                                            <a href="#" class="btn style_btn_unset flex items-center">
+                                                Explore our services
+                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M6 18L18 6" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    <path d="M8.25 6H18V15.75" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                </svg>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="item_application">
+                                    <div class="image">
+                                        <img src="../assets/images/ea6375e0dc7e7ad811ccd52bd418ad65b3f7647d.jpg" alt="">
+                                    </div>
+                                    <div class="content">
+                                        <h3 class="name text-center text-white mb-0">AI box</h3>
+                                        <div class="wrap_btn">
+                                            <a href="#" class="btn style_btn_unset flex items-center">
+                                                Explore our services
+                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M6 18L18 6" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    <path d="M8.25 6H18V15.75" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                </svg>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="item_application">
+                                    <div class="image">
+                                        <img src="../assets/images/772ec28b0563441c3afb4d55133052f517caf7c0.jpg" alt="">
+                                    </div>
+                                    <div class="content">
+                                        <h3 class="name text-center text-white mb-0">BLDC</h3>
+                                        <div class="wrap_btn">
+                                            <a href="#" class="btn style_btn_unset flex items-center">
+                                                Explore our services
+                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M6 18L18 6" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    <path d="M8.25 6H18V15.75" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                </svg>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="item_application">
+                                    <div class="image">
+                                        <img src="../assets/images/5695fed4faa1b7b63239e6486646b8bd06f176c5.jpg" alt="">
+                                    </div>
+                                    <div class="content">
+                                        <h3 class="name text-center text-white mb-0">CAMERA</h3>
+                                        <div class="wrap_btn">
+                                            <a href="#" class="btn style_btn_unset flex items-center">
+                                                Explore our services
+                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M6 18L18 6" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    <path d="M8.25 6H18V15.75" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                </svg>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>           
+                            <div class="swiper-slide">
+                                <div class="item_application">
+                                    <div class="image">
+                                        <img src="../assets/images/8661518d7ea78f64937134a4c5d34f6e03585e01.jpg" alt="">
+                                    </div>
+                                    <div class="content">
+                                        <h3 class="name text-center text-white mb-0">IC Testing (LAB)</h3>
+                                        <div class="wrap_btn">
+                                            <a href="#" class="btn style_btn_unset flex items-center">
+                                                Explore our services
+                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M6 18L18 6" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    <path d="M8.25 6H18V15.75" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                </svg>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="item_application">
+                                    <div class="image">
+                                        <img src="../assets/images/8661518d7ea78f64937134a4c5d34f6e03585e01.jpg" alt="">
+                                    </div>
+                                    <div class="content">
+                                        <h3 class="name text-center text-white mb-0">IC Testing (LAB)</h3>
+                                        <div class="wrap_btn">
+                                            <a href="#" class="btn style_btn_unset flex items-center">
+                                                Explore our services
+                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M6 18L18 6" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    <path d="M8.25 6H18V15.75" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                </svg>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="scrollbar_pagination">
+                            <div class="scrollbar_bottom desktop_display_pagi">
+                                <div class="swiper-scrollbar"></div>
+                                <div class="wrap_btn">
+                                    <a href="#" class="btn style_btn_1 flex items-center">
+                                        Explore more
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M6 18L18 6" stroke="#3D54A0" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M8.25 6H18V15.75" stroke="#3D54A0" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="home_8_video">
+                        <video src="../assets/images/nha-may.mp4" autoplay muted playsinline loop></video>
+                    </div>
+
+                    <div class="slogan_marquee_wrap relative">
+                        <div class="marquee_text_container marquee_container" id="marqueeContent">
+                            <div class="marquee_text_wrap marquee_content">
+                                <div class="marquee_track" id="track1">
+                                    <span>WILLAS</span>
+                                    <span class="dot"> </span>
+                                    <span>WILLAS</span>
+                                    <span class="dot"> </span>
+                                    <span>WILLAS</span>
+                                    <span class="dot"> </span>
+                                    <span>WILLAS</span>
+                                    <span class="dot"> </span>
+                                </div>
+                                <div class="marquee_track" id="track2">
+                                    <span>WILLAS</span>
+                                    <span class="dot"> </span>
+                                    <span>WILLAS</span>
+                                    <span class="dot"> </span>
+                                    <span>WILLAS</span>
+                                    <span class="dot"> </span>
+                                    <span>WILLAS</span>
+                                    <span class="dot"> </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="home_9">
+            <div class="row clearfix">
+                <div class="col large-12 medium-12 small-12">
+                    <div class="group_title flex justify-center">
+                        <h2 class="title uppercase style_color_1 text-center w-100 mb-0">our partners</h2>
+                    </div>
+                    <div class="wrap_logo_partner">
+                        <div class="marquee_img_container marquee_container">
+                            <div class="marquee_img_wrap marquee_content" id="marqueeContent-1">
+                                <div class="marquee_img marquee_track" id="track1">
+                                    <div class="img_item relative">
+                                        <a href="#" class="wrap_link"></a>
+                                        <img src="../assets/images/logo-fpt-polytechnic.png" alt="">
+                                    </div>
+                                    <div class="img_item relative">
+                                        <a href="#" class="wrap_link"></a>
+                                        <img src="../assets/images/logo-SONHA_DVTV-01.png" alt="">
+                                    </div>
+                                    <div class="img_item relative">
+                                        <a href="#" class="wrap_link"></a>
+                                        <img src="../assets/images/Sunhouse.png" alt="">
+                                    </div>
+                                    <div class="img_item relative">
+                                        <a href="#" class="wrap_link"></a>
+                                        <img src="../assets/images/logoVCCI.png" alt="">
+                                    </div>
+                                    <div class="img_item relative">
+                                        <a href="#" class="wrap_link"></a>
+                                        <img src="../assets/images/Viettel.png" alt="">
+                                    </div>
+                                    <div class="img_item relative">
+                                        <a href="#" class="wrap_link"></a>
+                                        <img src="../assets/images/Kangaroo.png" alt="">
+                                    </div>
+                                    <div class="img_item relative">
+                                        <a href="#" class="wrap_link"></a>
+                                        <img src="../assets/images/ad27bc12ca81e862ceb35328122757ee.png" alt="">
+                                    </div>
+                                    <div class="img_item relative">
+                                        <a href="#" class="wrap_link"></a>
+                                        <img src="../assets/images/BKhoa.png" alt="">
+                                    </div>
+                                    <div class="img_item relative">
+                                        <a href="#" class="wrap_link"></a>
+                                        <img src="../assets/images/78adbb044ee4cfa19a86de71e1544274a9c049ae.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="marquee_img marquee_track" id="track2">
+                                    <div class="img_item relative">
+                                        <a href="#" class="wrap_link"></a>
+                                        <img src="../assets/images/logo-fpt-polytechnic.png" alt="">
+                                    </div>
+                                    <div class="img_item relative">
+                                        <a href="#" class="wrap_link"></a>
+                                        <img src="../assets/images/logo-SONHA_DVTV-01.png" alt="">
+                                    </div>
+                                    <div class="img_item relative">
+                                        <a href="#" class="wrap_link"></a>
+                                        <img src="../assets/images/Sunhouse.png" alt="">
+                                    </div>
+                                    <div class="img_item relative">
+                                        <a href="#" class="wrap_link"></a>
+                                        <img src="../assets/images/logoVCCI.png" alt="">
+                                    </div>
+                                    <div class="img_item relative">
+                                        <a href="#" class="wrap_link"></a>
+                                        <img src="../assets/images/Viettel.png" alt="">
+                                    </div>
+                                    <div class="img_item relative">
+                                        <a href="#" class="wrap_link"></a>
+                                        <img src="../assets/images/Kangaroo.png" alt="">
+                                    </div>
+                                    <div class="img_item relative">
+                                        <a href="#" class="wrap_link"></a>
+                                        <img src="../assets/images/ad27bc12ca81e862ceb35328122757ee.png" alt="">
+                                    </div>
+                                    <div class="img_item relative">
+                                        <a href="#" class="wrap_link"></a>
+                                        <img src="../assets/images/BKhoa.png" alt="">
+                                    </div>
+                                    <div class="img_item relative">
+                                        <a href="#" class="wrap_link"></a>
+                                        <img src="../assets/images/78adbb044ee4cfa19a86de71e1544274a9c049ae.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="marquee_img marquee_track" id="track3">
+                                    <div class="img_item relative">
+                                        <a href="#" class="wrap_link"></a>
+                                        <img src="../assets/images/logo-fpt-polytechnic.png" alt="">
+                                    </div>
+                                    <div class="img_item relative">
+                                        <a href="#" class="wrap_link"></a>
+                                        <img src="../assets/images/logo-SONHA_DVTV-01.png" alt="">
+                                    </div>
+                                    <div class="img_item relative">
+                                        <a href="#" class="wrap_link"></a>
+                                        <img src="../assets/images/Sunhouse.png" alt="">
+                                    </div>
+                                    <div class="img_item relative">
+                                        <a href="#" class="wrap_link"></a>
+                                        <img src="../assets/images/logoVCCI.png" alt="">
+                                    </div>
+                                    <div class="img_item relative">
+                                        <a href="#" class="wrap_link"></a>
+                                        <img src="../assets/images/Viettel.png" alt="">
+                                    </div>
+                                    <div class="img_item relative">
+                                        <a href="#" class="wrap_link"></a>
+                                        <img src="../assets/images/Kangaroo.png" alt="">
+                                    </div>
+                                    <div class="img_item relative">
+                                        <a href="#" class="wrap_link"></a>
+                                        <img src="../assets/images/ad27bc12ca81e862ceb35328122757ee.png" alt="">
+                                    </div>
+                                    <div class="img_item relative">
+                                        <a href="#" class="wrap_link"></a>
+                                        <img src="../assets/images/BKhoa.png" alt="">
+                                    </div>
+                                    <div class="img_item relative">
+                                        <a href="#" class="wrap_link"></a>
+                                        <img src="../assets/images/78adbb044ee4cfa19a86de71e1544274a9c049ae.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="marquee_img_wrap marquee_content" id="marqueeContent-2">
+                                <div class="marquee_img marquee_track" id="track4">
+                                    <div class="img_item relative">
+                                        <a href="#" class="wrap_link"></a>
+                                        <img src="../assets/images/27896eaa4a29ec81156ff13fdf3895680d7c805c.png" alt="">
+                                    </div>
+                                    <div class="img_item relative">
+                                        <a href="#" class="wrap_link"></a>
+                                        <img src="../assets/images/logo-hoaphat.png" alt="">
+                                    </div>
+                                    <div class="img_item relative">
+                                        <a href="#" class="wrap_link"></a>
+                                        <img src="../assets/images/vnpt-seeklogo.png" alt="">
+                                    </div>
+                                    <div class="img_item relative">
+                                        <a href="#" class="wrap_link"></a>
+                                        <img src="../assets/images/CMC.png" alt="">
+                                    </div>
+                                    <div class="img_item relative">
+                                        <a href="#" class="wrap_link"></a>
+                                        <img src="../assets/images/logo-SONHA_DVTV-01.png" alt="">
+                                    </div>
+                                    <div class="img_item relative">
+                                        <a href="#" class="wrap_link"></a>
+                                        <img src="../assets/images/TMU.png" alt="">
+                                    </div>
+                                    <div class="img_item relative">
+                                        <a href="#" class="wrap_link"></a>
+                                        <img src="../assets/images/VINECO.png" alt="">
+                                    </div>
+                                    <div class="img_item relative">
+                                        <a href="#" class="wrap_link"></a>
+                                        <img src="../assets/images/GTVT.png" alt="">
+                                    </div>
+                                    <div class="img_item relative">
+                                        <a href="#" class="wrap_link"></a>
+                                        <img src="../assets/images/4ed73bba9a181c3895cdefead42193309aac62e9.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="marquee_img marquee_track" id="track5">
+                                    <div class="img_item relative">
+                                        <a href="#" class="wrap_link"></a>
+                                        <img src="../assets/images/27896eaa4a29ec81156ff13fdf3895680d7c805c.png" alt="">
+                                    </div>
+                                    <div class="img_item relative">
+                                        <a href="#" class="wrap_link"></a>
+                                        <img src="../assets/images/logo-hoaphat.png" alt="">
+                                    </div>
+                                    <div class="img_item relative">
+                                        <a href="#" class="wrap_link"></a>
+                                        <img src="../assets/images/vnpt-seeklogo.png" alt="">
+                                    </div>
+                                    <div class="img_item relative">
+                                        <a href="#" class="wrap_link"></a>
+                                        <img src="../assets/images/CMC.png" alt="">
+                                    </div>
+                                    <div class="img_item relative">
+                                        <a href="#" class="wrap_link"></a>
+                                        <img src="../assets/images/logo-SONHA_DVTV-01.png" alt="">
+                                    </div>
+                                    <div class="img_item relative">
+                                        <a href="#" class="wrap_link"></a>
+                                        <img src="../assets/images/TMU.png" alt="">
+                                    </div>
+                                    <div class="img_item relative">
+                                        <a href="#" class="wrap_link"></a>
+                                        <img src="../assets/images/VINECO.png" alt="">
+                                    </div>
+                                    <div class="img_item relative">
+                                        <a href="#" class="wrap_link"></a>
+                                        <img src="../assets/images/GTVT.png" alt="">
+                                    </div>
+                                    <div class="img_item relative">
+                                        <a href="#" class="wrap_link"></a>
+                                        <img src="../assets/images/4ed73bba9a181c3895cdefead42193309aac62e9.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="marquee_img marquee_track" id="track6">
+                                    <div class="img_item relative">
+                                        <a href="#" class="wrap_link"></a>
+                                        <img src="../assets/images/logo-fpt-polytechnic.png" alt="">
+                                    </div>
+                                    <div class="img_item relative">
+                                        <a href="#" class="wrap_link"></a>
+                                        <img src="../assets/images/logo-SONHA_DVTV-01.png" alt="">
+                                    </div>
+                                    <div class="img_item relative">
+                                        <a href="#" class="wrap_link"></a>
+                                        <img src="../assets/images/Sunhouse.png" alt="">
+                                    </div>
+                                    <div class="img_item relative">
+                                        <a href="#" class="wrap_link"></a>
+                                        <img src="../assets/images/logoVCCI.png" alt="">
+                                    </div>
+                                    <div class="img_item relative">
+                                        <a href="#" class="wrap_link"></a>
+                                        <img src="../assets/images/Viettel.png" alt="">
+                                    </div>
+                                    <div class="img_item relative">
+                                        <a href="#" class="wrap_link"></a>
+                                        <img src="../assets/images/Kangaroo.png" alt="">
+                                    </div>
+                                    <div class="img_item relative">
+                                        <a href="#" class="wrap_link"></a>
+                                        <img src="../assets/images/ad27bc12ca81e862ceb35328122757ee.png" alt="">
+                                    </div>
+                                    <div class="img_item relative">
+                                        <a href="#" class="wrap_link"></a>
+                                        <img src="../assets/images/BKhoa.png" alt="">
+                                    </div>
+                                    <div class="img_item relative">
+                                        <a href="#" class="wrap_link"></a>
+                                        <img src="../assets/images/78adbb044ee4cfa19a86de71e1544274a9c049ae.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="home_10">
+            <div class="row clearfix">
+                <div class="col large-12 medium-12 small-12">
+                    <div class="group_title flex justify-between items-center">
+                        <h2 class="title uppercase style_color_1 mb-0">Insight</h2>
+                        <div class="wrap_btn">
+                            <a href="#" class="btn style_btn_2 flex items-center">
+                                Explore more
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M6 18L18 6" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M8.25 6H18V15.75" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+
+
+                    <div class="slider_blog_insight no-overflow swiper-same-height">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="group_blog_insight flex">
+                                    <div class="item_blog_insight_first no-overflow relative">
+                                        <a href="#" class="wrap_link"></a>
+                                        <video src="../assets/images/as_937492742.mp4" autoplay muted playsinline loop></video>
+                                        <div class="group_title_blog_insight">
+                                            <h3 class="title fw-600 fs-25 lh-30 text-white mb-0 limit-line limit-5">
+                                                Willas Vietnam Signs Strategic Cooperation MOU with University of Transport and Communications
+                                            </h3>
+                                            <div class="date_blog fs-16 lh-22 text-white">
+                                                <ul>
+                                                    <li class="cate">News</li>
+                                                    <li class="gap">
+                                                        <span class="dot"></span>
+                                                    </li>
+                                                    <li class="date">20/05/2026</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item_blog_insight no-overflow relative">
+                                        <div class="inner ts-07 ">
+                                            <a href="#">
+                                                <div class="group_title_blog_insight">
+                                                    <h3 class="title fw-600 fs-30 lh-35 text-main mb-0 limit-line limit-5">
+                                                        Willas Vietnam Signs Strategic Cooperation MOU with University of Transport and Communications
+                                                    </h3>
+                                                    <div class="date_blog fs-16 lh-22">
+                                                        <ul>
+                                                            <li class="cate">News</li>
+                                                            <li class="gap">
+                                                                <span class="dot"></span>
+                                                            </li>
+                                                            <li class="date">20/05/2026</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                            <div class="desc fs-18 lh-22 last-reset limit-line limit-4">
+                                                Embracing the trend of strengthening industry-academia linkages, on July 4, 2025, Willas Electronic Vietnam Co., Ltd. and the University of Transport and Communications signed a Memorandum of Understanding (MOU), unlocking numerous opportunities to develop high-quality human resources for the electrical and electronic engineering sector.
+                                            </div>
+                                        </div>
+                                        <div class="img-wrap ts-07">
+                                            <a href="#">
+                                                <img src="../assets/images/6de52ed5f0fb39ce7a258dadf7ffe62ec69d5579-1.jpg" alt="">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="item_blog_insight no-overflow relative">
+                                        <div class="inner ts-07 ">
+                                            <a href="#">
+                                                <div class="group_title_blog_insight">
+                                                    <h3 class="title fw-600 fs-30 lh-35 text-main mb-0 limit-line limit-5">
+                                                        Willas Vietnam Signs Strategic Cooperation MOU with University of Transport and Communications
+                                                    </h3>
+                                                    <div class="date_blog fs-16 lh-22">
+                                                        <ul>
+                                                            <li class="cate">News</li>
+                                                            <li class="gap">
+                                                                <span class="dot"></span>
+                                                            </li>
+                                                            <li class="date">20/05/2026</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                            <div class="desc fs-18 lh-22 last-reset limit-line limit-4">
+                                                Embracing the trend of strengthening industry-academia linkages, on July 4, 2025, Willas Electronic Vietnam Co., Ltd. and the University of Transport and Communications signed a Memorandum of Understanding (MOU), unlocking numerous opportunities to develop high-quality human resources for the electrical and electronic engineering sector.
+                                            </div>
+                                        </div>
+                                        <div class="img-wrap ts-07">
+                                            <a href="#">
+                                                <img src="../assets/images/6de52ed5f0fb39ce7a258dadf7ffe62ec69d5579-2.jpg" alt="">
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="group_blog_insight flex">
+                                    <div class="item_blog_insight_first no-overflow relative">
+                                        <a href="#" class="wrap_link"></a>
+                                        <video src="../assets/images/as_937492742.mp4" autoplay muted playsinline loop></video>
+                                        <div class="group_title_blog_insight">
+                                            <h3 class="title fw-600 fs-25 lh-30 text-white mb-0 limit-line limit-5">
+                                                Willas Vietnam Signs Strategic Cooperation MOU with University of Transport and Communications
+                                            </h3>
+                                            <div class="date_blog fs-16 lh-22 text-white">
+                                                <ul>
+                                                    <li class="cate">News</li>
+                                                    <li class="gap">
+                                                        <span class="dot"></span>
+                                                    </li>
+                                                    <li class="date">20/05/2026</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item_blog_insight no-overflow relative">
+                                        <div class="inner">
+                                            <a href="#">
+                                                <div class="group_title_blog_insight">
+                                                    <h3 class="title fw-600 fs-30 lh-35 text-main mb-0 limit-line limit-5">
+                                                        Willas Vietnam Signs Strategic Cooperation MOU with University of Transport and Communications
+                                                    </h3>
+                                                    <div class="date_blog fs-16 lh-22">
+                                                        <ul>
+                                                            <li class="cate">News</li>
+                                                            <li class="gap">
+                                                                <span class="dot"></span>
+                                                            </li>
+                                                            <li class="date">20/05/2026</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                            <div class="desc fs-18 lh-22 last-reset limit-line limit-4">
+                                                Embracing the trend of strengthening industry-academia linkages, on July 4, 2025, Willas Electronic Vietnam Co., Ltd. and the University of Transport and Communications signed a Memorandum of Understanding (MOU), unlocking numerous opportunities to develop high-quality human resources for the electrical and electronic engineering sector.
+                                            </div>
+                                        </div>
+                                        <div class="img-wrap ts-07">
+                                            <a href="#">
+                                                <img src="../assets/images/6de52ed5f0fb39ce7a258dadf7ffe62ec69d5579-1.jpg" alt="">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="item_blog_insight no-overflow relative">
+                                        <div class="inner">
+                                            <a href="#">
+                                                <div class="group_title_blog_insight">
+                                                    <h3 class="title fw-600 fs-30 lh-35 text-main mb-0 limit-line limit-5">
+                                                        Willas Vietnam Signs Strategic Cooperation MOU with University of Transport and Communications
+                                                    </h3>
+                                                    <div class="date_blog fs-16 lh-22">
+                                                        <ul>
+                                                            <li class="cate">News</li>
+                                                            <li class="gap">
+                                                                <span class="dot"></span>
+                                                            </li>
+                                                            <li class="date">20/05/2026</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                            <div class="desc fs-18 lh-22 last-reset limit-line limit-4">
+                                                Embracing the trend of strengthening industry-academia linkages, on July 4, 2025, Willas Electronic Vietnam Co., Ltd. and the University of Transport and Communications signed a Memorandum of Understanding (MOU), unlocking numerous opportunities to develop high-quality human resources for the electrical and electronic engineering sector.
+                                            </div>
+                                        </div>
+                                        <div class="img-wrap ts-07">
+                                            <a href="#">
+                                                <img src="../assets/images/6de52ed5f0fb39ce7a258dadf7ffe62ec69d5579-2.jpg" alt="">
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="group_pagination pc-hide">
+                            <div class="swiper-pagination"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="home_11">
+            <div class="row clearfix">
+                <div class="col large-12 medium-12 small-12">
+                    <div class="home_11_wrapper flex">
+                        <div class="group_title content_left ">
+                            <h2 class="title style_color_1 mb-0">
+                                Are you ready to shape the future of technology with us?
+                            </h2>
+                        </div>
+                        <div class="content_right relative">
+                            <div class="desc">Leave your contact details or connect with us today to unlock cutting-edge tech solutions and shape the future together!</div>
+                            <div class="wrap_btn flex items-center">
+                                <a href="#" class="btn style_btn_2 flex items-center">
+                                    Contact Us
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M6 18L18 6" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M8.25 6H18V15.75" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </a>
+                                <a href="#" class="btn style_btn_3 flex items-center">
+                                    Book a Consultation
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M6 18L18 6" stroke="#3D54A0" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M8.25 6H18V15.75" stroke="#3D54A0" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+
+
+    </main>
+
+
+    <!-- footer -->
+    <footer id="footer" class="footer-wrapper">
+        <div class="footer_top">
+            <div class="row aligns-center clearfix">
+                <div class="col large-3 medium-3 small-12">
+                    <div class="logo_footer">
+                        <img src="../assets/images/logo-footer.svg" alt="">
+                        <h2 class="title style_color_1 lh-30 mb-0">
+                            Willas Electronic Vietnam Co.,Ltd.
+                        </h2>
+                    </div>
+                </div>
+
+                <div class="col large-9 medium-9 small-12">
+                    <div class="menu_wrapper_footer">
+                        <div class="item">
+                            <span class="title_menu fw-700 text-main fs-21 lh-35">Company Information</span>
+                            <ul class="ul-reset mb-0 menu_footer" id="menu-menu-footer-1">
+                                <li>5th Floor, Icon 4 Tower, 243A De La Thanh Street, Lang Thuong Ward, Dong Da District, Hanoi</li>
+                                <li>Hotline: 097 510 06 75</li>
+                                <li>Email: vnwillas@gmail.com</li>
+                            </ul>
+                        </div>
+                        <div class="item">
+                            <span class="title_menu fw-700 text-main fs-21 lh-35">Our Applications</span>
+                            <ul class="ul-reset mb-0 menu_footer" id="menu-menu-footer-2">
+                                <li><a href="#">AI Box</a></li>
+                                <li><a href="#">Home Appliance</a></li>
+                                <li><a href="#">BLDC</a></li>
+                                <li><a href="#">PD Charger</a></li>
+                                <li><a href="#">Camera</a></li>
+                                <li><a href="#">Home Medical</a></li>
+                                <li><a href="#">IC Testing (LAB)</a></li>
+                                <li><a href="#">Smarts Toys</a></li>
+                            </ul>
+                        </div>
+                        <div class="item">
+                            <span class="title_menu fw-700 text-main fs-21 lh-35">Follow Us</span>
+                            <ul class="ul-reset mb-0 menu_footer" id="menu-menu-footer-3">
+                                <li><a href="#">Facebook</a></li>
+                                <li><a href="#">Instagram</a></li>
+                                <li><a href="#">Linkedin</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer_bottom">
+            <div class="row clearfix">
+                <div class="col large-12 medium-12 small-12">
+                    <div class="wrap_footer_bottom">
+                        <div class="copyright_footer">
+                            © 2026 WILLAS VIETNAM. All rights reserved.
+                        </div>
+                        <ul class="ul-reset footer_menu_bottom flex">
+                            <li><a href="#">Terms and Conditions</a></li>
+                            <li><a href="#">Privacy policy</a></li>
+                            <li><a href="#">Cookies</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../assets/js/jquery.min.js"></script>
+    <script src="../assets/js/jquery-migrate.min.js"></script>
+    <script src="../assets/js/thuythu-core.min.js"></script>
+    <script src="../assets/js/frontend.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+</body>
+
+</html>
