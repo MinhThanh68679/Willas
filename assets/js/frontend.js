@@ -1,8 +1,22 @@
 jQuery(document).ready(function (){
+    SmoothScroll({
+        animationTime: 900,
+        stepSize: 80,
+        accelerationDelta: 30,
+        accelerationMax: 2.5,
+        keyboardSupport: true,
+        arrowScroll: 40,
+        pulseAlgorithm: true,
+        pulseScale: 5,
+        pulseNormalize: 1,
+        touchpadSupport: true,
+        fixedBackground: true,
+        excluded: '.overflow-y'
+    });
     AOSInit();
     swipperSlider();
     menuMobi();
-    // slideProductPopup();
+    AOS.refresh();
 })
 
 document.addEventListener("DOMContentLoaded", function () {
@@ -87,7 +101,6 @@ window.addEventListener('scroll', () => {
 });
 
 
-
 function menuMobi() {
     const btnMenuMobi = document.querySelector('.btn_menu_mobi');
     const mobileMenu = document.querySelector('.mobile_menu');
@@ -119,28 +132,7 @@ function AOSInit(){
     });
 }
 
-// function menuMobi() {
-//     const btnMenuMobi = document.querySelector('.btn_menu_mobi');
-//     const mobileMenu = document.querySelector('.mobile_menu');
-//     if (!btnMenuMobi || !mobileMenu) return;
-//     btnMenuMobi.addEventListener('click', () => mobileMenu.classList.toggle('active'));
-// }
-
 function swipperSlider(){
-    
-    // var slideHomeBanner = new Swiper(".slider_home_banner", {
-    //     loop: true,
-    //     slidesPerView: 1,
-    //     spaceBetween: 0,
-    //     pagination: {
-    //         el: ".swiper-pagination",
-    //         clickable: true,
-    //     },
-    //     navigation: {
-    //         nextEl: ".home_1 .slide_btn_icon.right",
-    //         prevEl: ".home_1 .slide_btn_icon.left",
-    //     },
-    // });
 
     var slideOurBrand = new Swiper(".home_6 .slider_our_brand", {
         // autoplay: {
@@ -159,7 +151,7 @@ function swipperSlider(){
             type: "progressbar",
         },
         breakpoints: {
-            1199: {
+            1200: {
                 slidesPerView: 4,
             },
 
@@ -171,36 +163,6 @@ function swipperSlider(){
                 slidesPerView: 2,
             },
         },
-
-
-
-        // autoplay: {
-        //     delay: 4000,
-        //     disableOnInteraction: false,
-        // },
-        // speed: 950,
-        // autoplay: {
-        //     delay: 2500,
-        //     disableOnInteraction: false,
-        // },
-        // slidesPerView: 1,
-        // scrollbar: {
-        //     el: ".home_6 .swiper-scrollbar",
-        //     clickable: true,
-        //     hide: true,
-        // },
-        // pagination: {
-        //     el: ".home_6 .swiper-pagination",
-        //     clickable: true,
-        // },
-        // breakpoints: {
-        //     991:{
-        //         slidesPerView: 3,
-        //     },
-        //     767:{
-        //         slidesPerView: 2,
-        //     }
-        // },
     });
 
     var slideFeatureProduct = new Swiper(".slider_feature_product", {
@@ -215,7 +177,7 @@ function swipperSlider(){
          clickable: true,
        },
        breakpoints: {
-          1199: {
+          1200: {
               slidesPerView: 4,
           },
 
@@ -247,7 +209,7 @@ function swipperSlider(){
             type: "progressbar",
         },
         breakpoints: {
-            1199: {
+            1200: {
                 slidesPerView: 5,
             },
 
@@ -280,364 +242,7 @@ function swipperSlider(){
         },
     });
 
-    // var slideLogoPartnerHome = new Swiper(".slider_logo_partner_home", {
-    //   slidesPerView: 3,
-    //   loop: true,
-    //   grid: {
-    //     rows: 2,
-    //     fill: 'row',
-    //   },
-    // //   spaceBetween: 0,
-    //   pagination: {
-    //     el: ".swiper-pagination",
-    //     clickable: true,
-    //   },
-    //   breakpoints: {
-    //         1200: {
-    //             slidesPerView: 5,
-    //         },
-
-    //         768:{
-    //             slidesPerView: 4,
-    //         },
-    //     },
-    // });
-
-    // var slideCertificate = new Swiper(".swiper_certificate", {
-    //     effect: "coverflow",
-    //     initialSlide: 1,
-    //     grabCursor: true,
-    //     centeredSlides: true,
-    //     slidesPerView: "auto",
-    //     loop: false,
-    //     coverflowEffect: {
-    //         rotate: 0,
-    //         stretch: 0,
-    //         depth: 0,
-    //         modifier: 1,
-    //         scale: 0.85,
-    //         slideShadows: false,
-    //     },
-    //     navigation: {
-    //         nextEl: ".about_8 .right",
-    //         prevEl: ".about_8 .left",
-    //     },
-    // });
-
-    // var slideRelatedNews = new Swiper(".slider_related_news", {
-    //     loop: true,
-    //     // autoplay: {
-    //     //     delay: 2000,
-    //     //     disableOnInteraction: false,
-    //     // },
-    //     slidesPerView: 1,
-    //     spaceBetween: 49,
-    //     pagination: {
-    //         el: ".swiper-pagination",
-    //         clickable: true,
-    //     },
-    //     navigation: {
-    //         nextEl: ".detail_news_3 .right",
-    //         prevEl: ".detail_news_3 .left",
-    //     },
-    //     breakpoints: {
-    //         768:{
-    //             slidesPerView: 3,
-    //         }
-    //     },
-    // });
-
-    // var gallerySlides = document.querySelectorAll('.product_gallery_slider .swiper-slide');
-
-    // var slideProductList = new Swiper(".product_gallery_small_slider", {
-    //     loop: false,
-    //     spaceBetween: 20,
-    //     slidesPerView: 5,
-    //     freeMode: true,
-    //     watchSlidesProgress: true,
-    //     navigation: {
-    //         prevEl: ".thumb-prev",
-    //         nextEl: ".thumb-next",
-    //     },
-    // });
-
-    // var slideProductLarge = new Swiper(".product_gallery_slider", {
-    //     loop: false,
-    //     spaceBetween: 10,
-    //     thumbs: {
-    //         swiper: slideProductList,
-    //     },
-    // });
-
-
-    // var slideClassifyProduct = new Swiper(".slider_classify_product", {
-    //     loop: true,
-    //     slidesPerView: 1,
-    //     spaceBetween: 0,
-    //     pagination: {
-    //         el: ".swiper-pagination",
-    //         clickable: true,
-    //     },
-    //     navigation: {
-    //         nextEl: ".detail_product_3 .layout_classify .slide_btn_icon.right",
-    //         prevEl: ".detail_product_3 .layout_classify .slide_btn_icon.left",
-    //     },
-    // });
-
-    // var slideCertificateProduct = new Swiper(".slider_certificate_image", {
-    //     loop: true,
-    //     slidesPerView: 1,
-    //     spaceBetween: 90,
-    //     pagination: {
-    //         el: ".swiper-pagination",
-    //         dynamicBullets: false,
-    //         clickable: true,
-    //     },
-    // });
-
-    // var slideRelatedProduct = new Swiper(".slider_related_product", {
-    //     loop: true,
-    //     // autoplay: {
-    //     //     delay: 2000,
-    //     //     disableOnInteraction: false,
-    //     // },
-    //     slidesPerView: 1,
-    //     spaceBetween: 25,
-    //     pagination: {
-    //         el: ".swiper-pagination",
-    //         clickable: true,
-    //     },
-    //     navigation: {
-    //         nextEl: ".detail_product_4 .right",
-    //         prevEl: ".detail_product_4 .left",
-    //     },
-    //     breakpoints: {
-    //         768:{
-    //             slidesPerView: 3,
-    //             spaceBetween: 50,
-    //         },
-
-    //         580:{
-    //             slidesPerView: 2,
-    //             spaceBetween: 25,
-    //         },
-    //     },
-    // });
 }
 
-// function slideProductPopup() {
-//     jQuery("[data-fancybox]").fancybox({
-//         afterShow: function (instance, slide) {
-//             const container = slide.$content?.[0];
-//             if (!container) return;
-
-//             const thumbEl = container.querySelector(".slide_thumb");
-//             const mainEl = container.querySelector(".slide_main");
-
-//             if (!thumbEl || !mainEl) return;
-
-//             if (thumbEl.swiper) {
-//                 thumbEl.swiper.destroy(true, true);
-//             }
-//             if (mainEl.swiper) {
-//                 mainEl.swiper.destroy(true, true);
-//             }
-
-//             // 👉 Đếm số slide thật (không tính duplicate)
-//             const totalSlides = mainEl.querySelectorAll(".swiper-slide").length;
-
-//             // =========================
-//             // THUMB SLIDER
-//             // =========================
-//             const thumbSwiper = new Swiper(thumbEl, {
-//                 loop: true,
-//                 loopedSlides: totalSlides,
-//                 slidesPerView: 3,
-//                 spaceBetween: 10,
-//                 speed: 900,
-
-//                 watchSlidesProgress: true,
-//                 watchSlidesVisibility: true,
-
-//                 observer: true,
-//                 observeParents: true,
-//             });
-
-//             // =========================
-//             // MAIN SLIDER
-//             // =========================
-//             const mainSwiper = new Swiper(mainEl, {
-//                 loop: true,
-//                 loopedSlides: totalSlides,
-//                 slidesPerView: 1,
-//                 speed: 900,
-
-//                 observer: true,
-//                 observeParents: true,
-
-//                 thumbs: {
-//                     swiper: thumbSwiper
-//                 },
-
-//                 on: {
-//                     init: function () {
-//                         updateActiveThumb(container, this.realIndex);
-//                     },
-//                     slideChange: function () {
-//                         updateActiveThumb(container, this.realIndex);
-//                     }
-//                 }
-//             });
-
-//             // =========================
-//             // ACTIVE THUMB CUSTOM
-//             // =========================
-//             function updateActiveThumb(scope, activeIndex) {
-//                 const thumbs = scope.querySelectorAll(".slide_thumb .swiper-slide");
-
-//                 thumbs.forEach(el => el.classList.remove("slide-thumb-active"));
-
-//                 if (thumbs[activeIndex]) {
-//                     thumbs[activeIndex].classList.add("slide-thumb-active");
-//                 }
-//             }
-
-//             // =========================
-//             // CLICK THUMB → MAIN
-//             // =========================
-//             thumbSwiper.on("click", function (swiper) {
-//                 if (typeof swiper.clickedIndex !== "undefined") {
-//                     mainSwiper.slideToLoop(swiper.clickedIndex, 500);
-//                 }
-//             });
-
-//             // =========================
-//             // ARROWS
-//             // =========================
-//             const nextBtn = container.querySelector(".arrow.next");
-//             const prevBtn = container.querySelector(".arrow.prev");
-
-//             if (nextBtn) {
-//                 nextBtn.onclick = () => mainSwiper.slideNext();
-//             }
-
-//             if (prevBtn) {
-//                 prevBtn.onclick = () => mainSwiper.slidePrev();
-//             }
-//         }
-//     });
-// }
-
-
-// function slideProductPopup() {
-//   document.addEventListener('DOMContentLoaded', () => {
-
-//     document.querySelectorAll('.link_popup_document').forEach((link, index) => {
-//       link.addEventListener('click', (e) => {
-//         e.preventDefault();
-
-//         Fancybox.show([{ src: '#popup_document', type: 'inline' }], {
-//           afterShow(instance, slide) {
-//             const container = slide.$content;
-//             if (!container) return;
-
-//             // Destroy nếu đã init
-//             const thumbEl = container.querySelector('.slide_thumb');
-//             const mainEl = container.querySelector('.slide_main');
-//             if (!thumbEl || !mainEl) return;
-
-//             if (thumbEl.swiper) thumbEl.swiper.destroy(true, true);
-//             if (mainEl.swiper) mainEl.swiper.destroy(true, true);
-
-//             const totalSlides = mainEl.querySelectorAll('.swiper-slide:not(.swiper-slide-duplicate)').length;
-
-//             // Init thumb trước
-//             const thumbSwiper = new Swiper(thumbEl, {
-//               loop: true,
-//               loopedSlides: totalSlides,
-//               slidesPerView: 5,
-//               spaceBetween: 8,
-//               watchSlidesProgress: true,
-//               observer: true,
-//               observeParents: true,
-//             });
-
-//             // Init main sau
-//             const mainSwiper = new Swiper(mainEl, {
-//               loop: true,
-//               loopedSlides: totalSlides,
-//               slidesPerView: 1,
-//               speed: 600,
-//               observer: true,
-//               observeParents: true,
-//               thumbs: { swiper: thumbSwiper },
-//               on: {
-//                 init() { updateActiveThumb(container, this.realIndex); },
-//                 slideChange() { updateActiveThumb(container, this.realIndex); }
-//               }
-//             });
-
-//             function updateActiveThumb(scope, activeIndex) {
-//               scope.querySelectorAll('.slide_thumb .swiper-slide:not(.swiper-slide-duplicate)')
-//                 .forEach(el => el.classList.remove('slide-thumb-active'));
-//               const thumbs = scope.querySelectorAll('.slide_thumb .swiper-slide:not(.swiper-slide-duplicate)');
-//               if (thumbs[activeIndex]) thumbs[activeIndex].classList.add('slide-thumb-active');
-//             }
-
-//             thumbSwiper.on('click', (swiper) => {
-//               if (typeof swiper.clickedIndex !== 'undefined') {
-//                 mainSwiper.slideToLoop(swiper.realIndex, 500);
-//               }
-//             });
-
-//             const prevBtn = container.querySelector('.arrow.prev');
-//             const nextBtn = container.querySelector('.arrow.next');
-//             if (prevBtn) prevBtn.onclick = () => mainSwiper.slidePrev();
-//             if (nextBtn) nextBtn.onclick = () => mainSwiper.slideNext();
-
-//             // Nhảy đến đúng slide được click
-//             mainSwiper.slideToLoop(index, 0);
-//           }
-//         });
-//       });
-//     });
-
-//   });
-// }
-
-
-
-
-
-
-// jQuery(document).ready(function ($) {
-//     if (window.innerWidth > 767) {
-//         $('.wrap_box_hover_about_value .item').hover(
-//             // function () {
-//             //     var id = $(this).data('id');
-
-//             //     $('.wrap_box_hover_about_value .item').removeClass('active');
-//             //     $(this).addClass('active');
-
-//             //     $('.wrap_box_hover_about_value .item_bg_value').removeClass('active');
-//             //     $('.wrap_box_hover_about_value .item_bg_value[data-id="' + id + '"]').addClass('active');
-//             // },
-
-//             function () {
-//                 var id = $(this).data('id');
-
-//                 // Gộp tất cả thay đổi vào cùng 1 lần
-//                 $('.wrap_box_hover_about_value .item').removeClass('active');
-//                 $('.wrap_box_hover_about_value .item_bg_value').removeClass('active');
-                
-//                 $(this).addClass('active');
-//                 $('.wrap_box_hover_about_value .item_bg_value[data-id="' + id + '"]').addClass('active');
-//             },
-//             function () {
-//                 // Bạn có thể thêm hành động khi rời chuột ở đây nếu cần
-//             }
-//         );
-//     }
-// });
 
 

@@ -5,22 +5,64 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>WILLAS</title>
-    <link rel="stylesheet" href="../assets/css/flatsome-core.min.css">
-    <link rel="stylesheet" href="../assets/css/thuythu-core.min.css">
-    <link rel="stylesheet" href="../assets/css/frontend.css">
-    <link rel="stylesheet" href="../assets/css/stylesheet.css">
+
+    <!------------------------------------------------------------->
+    
+    <meta name="description" content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="./index.html">
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Willas - Lorem ipsum">
+    <meta property="og:description" content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.">
+    <meta property="og:url" content="./index.html">
+    <meta property="og:image" content="https://uat6.thuythu.vn/bachviet/assets/images/seo_image.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:locale" content="vi_VN">
+    <meta property="og:site_name" content="Bách Việt">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Willas - Lorem ipsum">
+    <meta name="twitter:description" content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.">
+    <meta name="twitter:image" content="https://uat6.thuythu.vn/bachviet/assets/images/seo_image.png">
+
+    <link rel="icon" href="./assets/images/logo-header.svg" type="image/x-icon">
+    <link rel="apple-touch-icon" href="./assets/images/logo-header.svg">
+
+    <!------------------------------------------------------------->
+
+    <link rel="stylesheet" href="./assets/css/flatsome-core.min.css">
+    <link rel="stylesheet" href="./assets/css/thuythu-core.min.css">
+    <link rel="stylesheet" href="./assets/css/frontend.css">
+    <link rel="stylesheet" href="./assets/css/stylesheet.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 </head>
 
 <body>
+
+    <!--load page-->
+    <div class="load_home_page">
+        <div class="mask"><span></span><span></span><span></span><span></span><span></span></div>
+        <svg></svg>
+        <img src="./assets/images/logo-header.svg" class="logo_center" alt="">
+        <script>
+            setTimeout(() => {
+                jQuery('.load_home_page').addClass('complete');
+                setTimeout(() => {
+                    jQuery('body').removeClass('unscrollable');
+                }, 40);
+            }, 500);
+        </script>
+    </div>
     <!-- header -->
     <header>
         <div class="header_pc">
             <div class="header-wrapper">
                 <div class="header_left">
                     <a href="./index.html" class="header_logo">
-                        <img src="../assets/images/logo-header.svg" alt="Willas">
+                        <img src="./assets/images/logo-header.svg" alt="Willas">
                     </a>
                 </div>
                 <nav class="header_nav">
@@ -97,7 +139,7 @@
 
                 <div class="header_left">
                     <a href="./index.html" class="header_logo">
-                        <img src="./assets/images/logo.png" alt="Bachvietmed">
+                        <img src="./assets/images/logo-header.svg" alt="Willas">
                     </a>
                 </div>
 
@@ -127,17 +169,33 @@
                             </svg>
                         </a>
                     </div>
-                    <div class="btn_lang">
-                        <img src="./assets/images/flag_vn.png" alt="VN">
-                        <span>VN</span>
-                        <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M8.125 3.75L5 6.875L1.875 3.75" stroke="white" stroke-linecap="round"
-                                stroke-linejoin="round"/>
-                        </svg>
+                    <div class="btn_lang fs-16">
+                        <div class="icon_svg_lang">
+                            <svg width="27" height="27" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M13.5 23.625C19.0919 23.625 23.625 19.0919 23.625 13.5C23.625 7.90812 19.0919 3.375 13.5 3.375C7.90812 3.375 3.375 7.90812 3.375 13.5C3.375 19.0919 7.90812 23.625 13.5 23.625Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M3.95117 10.125H23.0479" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M3.95215 16.875H23.0487" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M13.5 23.3532C15.83 23.3532 17.7188 18.9418 17.7188 13.5C17.7188 8.05823 15.83 3.6468 13.5 3.6468C11.17 3.6468 9.28125 8.05823 9.28125 13.5C9.28125 18.9418 11.17 23.3532 13.5 23.3532Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                        <span>English</span>
                     </div>
-                    <a href="#" class="btn_link_page fs-18">
-                        Liên hệ tư vấn
-                    </a>
+                    <div class="dd_menu">
+                        <div class="dd_menu_inner">
+                            <a href="#" class="dd_item active" data-value="global">
+                                <div class="icon_dd_trigger">
+                                    <img src="./assets/images/buildings.svg" alt="">
+                                </div>
+                                <span class="dd_trigger_text">Global Branches</span>
+                            </a>
+                            <a href="#" class="dd_item" data-value="individual">
+                                <div class="icon_dd_trigger">
+                                    <img src="./assets/images/users.svg" alt="">
+                                </div>
+                                <span class="dd_trigger_text">Individual Buyers</span>
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -225,7 +283,7 @@
     <!-- main -->
     <main id="main">
         <section class="home_1 relative">
-            <video src="../assets/images/WILLAS_banner.mp4" autoplay muted playsinline loop></video>
+            <video src="./assets/images/WILLAS_banner.mp4" autoplay muted playsinline loop></video>
             <div class="home_banner_content text-center absolute">
                 <h1 class="home_banner_title uppercase style_color_text_banner mb-0">WILLAS</h1>
                 <div class="home_banner_desc style_color_text_banner lh-100p">Willas Components – Elevating the Quality of Vietnamese Products.</div>
@@ -244,9 +302,9 @@
         <section class="home_2">
             <div class="row clearfix">
                 <div class="col large-6 medium-6 small-12">
-                    <div class="home_2_image relative">
-                        <img src="../assets/images/mask-group-home-2.png" alt="">
-                    </div>
+                    <!-- <div class="home_2_image relative">
+                        <img src="./assets/images/mask-group-home-2.png" alt="">
+                    </div> -->
                 </div>
                 <div class="col large-6 medium-6 small-12">
                     <div class="home_2_content">
@@ -274,36 +332,36 @@
                 <div class="marquee_img_wrap marquee_content" id="marqueeContent">
                     <div class="marquee_img marquee_track" id="track1">
                         <div class="img_item">
-                            <img src="../assets/images/marquee-rectangle-18481.jpg" alt="">
+                            <img src="./assets/images/marquee-rectangle-18481.jpg" alt="">
                         </div>
                         <div class="img_item">
-                            <img src="../assets/images/marquee-rectangle-18482.jpg" alt="">
+                            <img src="./assets/images/marquee-rectangle-18482.jpg" alt="">
                         </div>
                         <div class="img_item">
-                            <img src="../assets/images/marquee-rectangle-18483.jpg" alt="">
+                            <img src="./assets/images/marquee-rectangle-18483.jpg" alt="">
                         </div>
                         <div class="img_item">
-                            <img src="../assets/images/marquee-rectangle-18484.jpg" alt="">
+                            <img src="./assets/images/marquee-rectangle-18484.jpg" alt="">
                         </div>
                         <div class="img_item">
-                            <img src="../assets/images/marquee-rectangle-18480.jpg" alt="">
+                            <img src="./assets/images/marquee-rectangle-18480.jpg" alt="">
                         </div>
                     </div>
                     <div class="marquee_img marquee_track" id="track2">
                         <div class="img_item">
-                            <img src="../assets/images/marquee-rectangle-18481.jpg" alt="">
+                            <img src="./assets/images/marquee-rectangle-18481.jpg" alt="">
                         </div>
                         <div class="img_item">
-                            <img src="../assets/images/marquee-rectangle-18482.jpg" alt="">
+                            <img src="./assets/images/marquee-rectangle-18482.jpg" alt="">
                         </div>
                         <div class="img_item">
-                            <img src="../assets/images/marquee-rectangle-18483.jpg" alt="">
+                            <img src="./assets/images/marquee-rectangle-18483.jpg" alt="">
                         </div>
                         <div class="img_item">
-                            <img src="../assets/images/marquee-rectangle-18484.jpg" alt="">
+                            <img src="./assets/images/marquee-rectangle-18484.jpg" alt="">
                         </div>
                         <div class="img_item">
-                            <img src="../assets/images/marquee-rectangle-18480.jpg" alt="">
+                            <img src="./assets/images/marquee-rectangle-18480.jpg" alt="">
                         </div>
                     </div>
                 </div>
@@ -335,7 +393,7 @@
                         <div class="home_3_item">
                             <div class="icon_wrap">
                                 <div class="icon_circle">
-                                    <img src="../assets/images/092bf852ffa3389d2acd98d1c725b67916a51a3e.gif" alt="">
+                                    <img src="./assets/images/092bf852ffa3389d2acd98d1c725b67916a51a3e.gif" alt="">
                                 </div>
                             </div>
                             <div class="card_content">
@@ -346,7 +404,7 @@
                         <div class="home_3_item">
                             <div class="icon_wrap">
                                 <div class="icon_circle">
-                                    <img src="../assets/images/11a2dc28784836f025c4515546355c084b593e1e.gif" alt="">
+                                    <img src="./assets/images/11a2dc28784836f025c4515546355c084b593e1e.gif" alt="">
                                 </div>
                             </div>
                             <div class="card_content">
@@ -357,7 +415,7 @@
                         <div class="home_3_item">
                             <div class="icon_wrap">
                                 <div class="icon_circle">
-                                    <img src="../assets/images/11a2dc28784836f025c4515546355c084b593e1e.gif" alt="">
+                                    <img src="./assets/images/11a2dc28784836f025c4515546355c084b593e1e.gif" alt="">
                                 </div>
                             </div>
                             <div class="card_content">
@@ -375,7 +433,7 @@
                 <div class="col large-12 medium-12 small-12">
                     <div class="why_choose relative">
                         <div class="why_choose_image">
-                            <img src="../assets/images/shutterstock_2177147503-1.png" alt="">
+                            <img src="./assets/images/shutterstock_2177147503-1.png" alt="">
                         </div>
                         <div class="why_choose_body">
                             <div class="group_title">
@@ -384,25 +442,25 @@
                             <div class="why_choose_wrap">
                                 <div class="why_choose_item">
                                     <div class="icon">
-                                        <img src="../assets/images/mask-group-home-4.svg" alt="">
+                                        <img src="./assets/images/mask-group-home-4.svg" alt="">
                                     </div>
                                     <div class="desc">Experience</div>
                                 </div>
                                 <div class="why_choose_item">
                                     <div class="icon">
-                                        <img src="../assets/images/mask-group-home-4-1.svg" alt="">
+                                        <img src="./assets/images/mask-group-home-4-1.svg" alt="">
                                     </div>
                                     <div class="desc">Adaptability</div>
                                 </div>
                                 <div class="why_choose_item">
                                     <div class="icon">
-                                        <img src="../assets/images/mask-group-home-4-2.svg" alt="">
+                                        <img src="./assets/images/mask-group-home-4-2.svg" alt="">
                                     </div>
                                     <div class="desc">Agility</div>
                                 </div>
                                 <div class="why_choose_item">
                                     <div class="icon">
-                                        <img src="../assets/images/mask-group-home-4-3.svg" alt="">
+                                        <img src="./assets/images/mask-group-home-4-3.svg" alt="">
                                     </div>
                                     <div class="desc">Versatility</div>
                                 </div>
@@ -443,7 +501,7 @@
                             <div class="swiper-slide">
                                 <div class="item_brand">
                                     <div class="logo_brand">
-                                        <img src="../assets/images/logo-home-image-201-1.png" alt="">
+                                        <img src="./assets/images/logo-home-image-201-1.png" alt="">
                                     </div>
                                     <div class="content_brand">
                                         <h3 class="title mb-0">Arlitech Electronic Corp</h3>
@@ -454,7 +512,7 @@
                             <div class="swiper-slide">
                                 <div class="item_brand">
                                     <div class="logo_brand">
-                                        <img src="../assets/images/logo-home-image-201-2.png" alt="">
+                                        <img src="./assets/images/logo-home-image-201-2.png" alt="">
                                     </div>
                                     <div class="content_brand">
                                         <h3 class="title mb-0">Kuan Kun Electronic Enterprise Co., Ltd.</h3>
@@ -465,7 +523,7 @@
                             <div class="swiper-slide">
                                 <div class="item_brand">
                                     <div class="logo_brand">
-                                        <img src="../assets/images/logo-home-image-201-3.png" alt="">
+                                        <img src="./assets/images/logo-home-image-201-3.png" alt="">
                                     </div>
                                     <div class="content_brand">
                                         <h3 class="title mb-0">Artery Technology Corporation</h3>
@@ -476,7 +534,7 @@
                             <div class="swiper-slide">
                                 <div class="item_brand">
                                     <div class="logo_brand">
-                                        <img src="../assets/images/logo-home-image-201-4.png" alt="">
+                                        <img src="./assets/images/logo-home-image-201-4.png" alt="">
                                     </div>
                                     <div class="content_brand">
                                         <h3 class="title mb-0">inergy Technology</h3>
@@ -488,7 +546,7 @@
                             <div class="swiper-slide">
                                 <div class="item_brand">
                                     <div class="logo_brand">
-                                        <img src="../assets/images/logo-home-image-201-1.png" alt="">
+                                        <img src="./assets/images/logo-home-image-201-1.png" alt="">
                                     </div>
                                     <div class="content_brand">
                                         <div class="name_brand">Arlitech Electronic Corp</div>
@@ -499,7 +557,7 @@
                             <div class="swiper-slide">
                                 <div class="item_brand">
                                     <div class="logo_brand">
-                                        <img src="../assets/images/logo-home-image-201-2.png" alt="">
+                                        <img src="./assets/images/logo-home-image-201-2.png" alt="">
                                     </div>
                                     <div class="content_brand">
                                         <div class="name_brand">Kuan Kun Electronic Enterprise Co., Ltd.</div>
@@ -510,7 +568,7 @@
                             <div class="swiper-slide">
                                 <div class="item_brand">
                                     <div class="logo_brand">
-                                        <img src="../assets/images/logo-home-image-201-3.png" alt="">
+                                        <img src="./assets/images/logo-home-image-201-3.png" alt="">
                                     </div>
                                     <div class="content_brand">
                                         <div class="name_brand">Artery Technology Corporation</div>
@@ -521,7 +579,7 @@
                             <div class="swiper-slide">
                                 <div class="item_brand">
                                     <div class="logo_brand">
-                                        <img src="../assets/images/logo-home-image-201-4.png" alt="">
+                                        <img src="./assets/images/logo-home-image-201-4.png" alt="">
                                     </div>
                                     <div class="content_brand">
                                         <div class="name_brand">inergy Technology</div>
@@ -563,7 +621,7 @@
                                     <a class="wrap_link" href="#"></a>
                                     <h3 class="title mb-0">Crystal</h3>
                                     <div class="box_img hover_zoom">
-                                        <img src="../assets/images/mb354-1-4.png" alt="">
+                                        <img src="./assets/images/mb354-1-4.png" alt="">
                                     </div>
                                     <div class="wrap_btn flex items-center">
                                         <a href="#" class="btn style_btn_unset flex items-center">
@@ -588,7 +646,7 @@
                                     <a class="wrap_link" href="#"></a>
                                     <h3 class="title mb-0">Logic</h3>
                                     <div class="box_img hover_zoom">
-                                        <img src="../assets/images/mb354-1-1.png" alt="">
+                                        <img src="./assets/images/mb354-1-1.png" alt="">
                                     </div>
                                     <div class="wrap_btn flex items-center">
                                         <a href="#" class="btn style_btn_unset flex items-center">
@@ -613,7 +671,7 @@
                                     <a class="wrap_link" href="#"></a>
                                     <h3 class="title mb-0">Rectifier</h3>
                                     <div class="box_img hover_zoom">
-                                        <img src="../assets/images/mb354-1-2.png" alt="">
+                                        <img src="./assets/images/mb354-1-2.png" alt="">
                                     </div>
                                     <div class="wrap_btn flex items-center">
                                         <a href="#" class="btn style_btn_unset flex items-center">
@@ -638,7 +696,7 @@
                                     <a class="wrap_link" href="#"></a>
                                     <h3 class="title mb-0">Transistor</h3>
                                     <div class="box_img hover_zoom">
-                                        <img src="../assets/images/mb354-1-3.png" alt="">
+                                        <img src="./assets/images/mb354-1-3.png" alt="">
                                     </div>
                                     <div class="wrap_btn flex items-center">
                                         <a href="#" class="btn style_btn_unset flex items-center">
@@ -663,7 +721,7 @@
                                     <a class="wrap_link" href="#"></a>
                                     <h3 class="title mb-0">Crystal</h3>
                                     <div class="box_img hover_zoom">
-                                        <img src="../assets/images/mb354-1-4.png" alt="">
+                                        <img src="./assets/images/mb354-1-4.png" alt="">
                                     </div>
                                     <div class="wrap_btn flex items-center">
                                         <a href="#" class="btn style_btn_unset flex items-center">
@@ -706,7 +764,7 @@
                             <div class="swiper-slide">
                                 <div class="item_application">
                                     <div class="image">
-                                        <img src="../assets/images/490c4c563df57ddc73d3798cbf17427e4e7561f2.jpg" alt="">
+                                        <img src="./assets/images/490c4c563df57ddc73d3798cbf17427e4e7561f2.jpg" alt="">
                                     </div>
                                     <div class="content">
                                         <h3 class="name text-center text-white mb-0">Home Appliance</h3>
@@ -725,7 +783,7 @@
                             <div class="swiper-slide">
                                 <div class="item_application">
                                     <div class="image">
-                                        <img src="../assets/images/ea6375e0dc7e7ad811ccd52bd418ad65b3f7647d.jpg" alt="">
+                                        <img src="./assets/images/ea6375e0dc7e7ad811ccd52bd418ad65b3f7647d.jpg" alt="">
                                     </div>
                                     <div class="content">
                                         <h3 class="name text-center text-white mb-0">AI box</h3>
@@ -744,7 +802,7 @@
                             <div class="swiper-slide">
                                 <div class="item_application">
                                     <div class="image">
-                                        <img src="../assets/images/772ec28b0563441c3afb4d55133052f517caf7c0.jpg" alt="">
+                                        <img src="./assets/images/772ec28b0563441c3afb4d55133052f517caf7c0.jpg" alt="">
                                     </div>
                                     <div class="content">
                                         <h3 class="name text-center text-white mb-0">BLDC</h3>
@@ -763,7 +821,7 @@
                             <div class="swiper-slide">
                                 <div class="item_application">
                                     <div class="image">
-                                        <img src="../assets/images/5695fed4faa1b7b63239e6486646b8bd06f176c5.jpg" alt="">
+                                        <img src="./assets/images/5695fed4faa1b7b63239e6486646b8bd06f176c5.jpg" alt="">
                                     </div>
                                     <div class="content">
                                         <h3 class="name text-center text-white mb-0">CAMERA</h3>
@@ -782,7 +840,7 @@
                             <div class="swiper-slide">
                                 <div class="item_application">
                                     <div class="image">
-                                        <img src="../assets/images/8661518d7ea78f64937134a4c5d34f6e03585e01.jpg" alt="">
+                                        <img src="./assets/images/8661518d7ea78f64937134a4c5d34f6e03585e01.jpg" alt="">
                                     </div>
                                     <div class="content">
                                         <h3 class="name text-center text-white mb-0">IC Testing (LAB)</h3>
@@ -801,7 +859,7 @@
                             <div class="swiper-slide">
                                 <div class="item_application">
                                     <div class="image">
-                                        <img src="../assets/images/8661518d7ea78f64937134a4c5d34f6e03585e01.jpg" alt="">
+                                        <img src="./assets/images/8661518d7ea78f64937134a4c5d34f6e03585e01.jpg" alt="">
                                     </div>
                                     <div class="content">
                                         <h3 class="name text-center text-white mb-0">IC Testing (LAB)</h3>
@@ -836,7 +894,7 @@
                     </div>
 
                     <div class="home_8_video">
-                        <video src="../assets/images/nha-may.mp4" autoplay muted playsinline loop></video>
+                        <video src="./assets/images/nha-may.mp4" autoplay muted playsinline loop></video>
                     </div>
 
                     <div class="slogan_marquee_wrap relative">
@@ -882,115 +940,115 @@
                                 <div class="marquee_img marquee_track" id="track1">
                                     <div class="img_item relative">
                                         <a href="#" class="wrap_link"></a>
-                                        <img src="../assets/images/logo-fpt-polytechnic.png" alt="">
+                                        <img src="./assets/images/logo-fpt-polytechnic.png" alt="">
                                     </div>
                                     <div class="img_item relative">
                                         <a href="#" class="wrap_link"></a>
-                                        <img src="../assets/images/logo-SONHA_DVTV-01.png" alt="">
+                                        <img src="./assets/images/logo-SONHA_DVTV-01.png" alt="">
                                     </div>
                                     <div class="img_item relative">
                                         <a href="#" class="wrap_link"></a>
-                                        <img src="../assets/images/Sunhouse.png" alt="">
+                                        <img src="./assets/images/Sunhouse.png" alt="">
                                     </div>
                                     <div class="img_item relative">
                                         <a href="#" class="wrap_link"></a>
-                                        <img src="../assets/images/logoVCCI.png" alt="">
+                                        <img src="./assets/images/logoVCCI.png" alt="">
                                     </div>
                                     <div class="img_item relative">
                                         <a href="#" class="wrap_link"></a>
-                                        <img src="../assets/images/Viettel.png" alt="">
+                                        <img src="./assets/images/Viettel.png" alt="">
                                     </div>
                                     <div class="img_item relative">
                                         <a href="#" class="wrap_link"></a>
-                                        <img src="../assets/images/Kangaroo.png" alt="">
+                                        <img src="./assets/images/Kangaroo.png" alt="">
                                     </div>
                                     <div class="img_item relative">
                                         <a href="#" class="wrap_link"></a>
-                                        <img src="../assets/images/ad27bc12ca81e862ceb35328122757ee.png" alt="">
+                                        <img src="./assets/images/ad27bc12ca81e862ceb35328122757ee.png" alt="">
                                     </div>
                                     <div class="img_item relative">
                                         <a href="#" class="wrap_link"></a>
-                                        <img src="../assets/images/BKhoa.png" alt="">
+                                        <img src="./assets/images/BKhoa.png" alt="">
                                     </div>
                                     <div class="img_item relative">
                                         <a href="#" class="wrap_link"></a>
-                                        <img src="../assets/images/78adbb044ee4cfa19a86de71e1544274a9c049ae.png" alt="">
+                                        <img src="./assets/images/78adbb044ee4cfa19a86de71e1544274a9c049ae.png" alt="">
                                     </div>
                                 </div>
                                 <div class="marquee_img marquee_track" id="track2">
                                     <div class="img_item relative">
                                         <a href="#" class="wrap_link"></a>
-                                        <img src="../assets/images/logo-fpt-polytechnic.png" alt="">
+                                        <img src="./assets/images/logo-fpt-polytechnic.png" alt="">
                                     </div>
                                     <div class="img_item relative">
                                         <a href="#" class="wrap_link"></a>
-                                        <img src="../assets/images/logo-SONHA_DVTV-01.png" alt="">
+                                        <img src="./assets/images/logo-SONHA_DVTV-01.png" alt="">
                                     </div>
                                     <div class="img_item relative">
                                         <a href="#" class="wrap_link"></a>
-                                        <img src="../assets/images/Sunhouse.png" alt="">
+                                        <img src="./assets/images/Sunhouse.png" alt="">
                                     </div>
                                     <div class="img_item relative">
                                         <a href="#" class="wrap_link"></a>
-                                        <img src="../assets/images/logoVCCI.png" alt="">
+                                        <img src="./assets/images/logoVCCI.png" alt="">
                                     </div>
                                     <div class="img_item relative">
                                         <a href="#" class="wrap_link"></a>
-                                        <img src="../assets/images/Viettel.png" alt="">
+                                        <img src="./assets/images/Viettel.png" alt="">
                                     </div>
                                     <div class="img_item relative">
                                         <a href="#" class="wrap_link"></a>
-                                        <img src="../assets/images/Kangaroo.png" alt="">
+                                        <img src="./assets/images/Kangaroo.png" alt="">
                                     </div>
                                     <div class="img_item relative">
                                         <a href="#" class="wrap_link"></a>
-                                        <img src="../assets/images/ad27bc12ca81e862ceb35328122757ee.png" alt="">
+                                        <img src="./assets/images/ad27bc12ca81e862ceb35328122757ee.png" alt="">
                                     </div>
                                     <div class="img_item relative">
                                         <a href="#" class="wrap_link"></a>
-                                        <img src="../assets/images/BKhoa.png" alt="">
+                                        <img src="./assets/images/BKhoa.png" alt="">
                                     </div>
                                     <div class="img_item relative">
                                         <a href="#" class="wrap_link"></a>
-                                        <img src="../assets/images/78adbb044ee4cfa19a86de71e1544274a9c049ae.png" alt="">
+                                        <img src="./assets/images/78adbb044ee4cfa19a86de71e1544274a9c049ae.png" alt="">
                                     </div>
                                 </div>
                                 <div class="marquee_img marquee_track" id="track3">
                                     <div class="img_item relative">
                                         <a href="#" class="wrap_link"></a>
-                                        <img src="../assets/images/logo-fpt-polytechnic.png" alt="">
+                                        <img src="./assets/images/logo-fpt-polytechnic.png" alt="">
                                     </div>
                                     <div class="img_item relative">
                                         <a href="#" class="wrap_link"></a>
-                                        <img src="../assets/images/logo-SONHA_DVTV-01.png" alt="">
+                                        <img src="./assets/images/logo-SONHA_DVTV-01.png" alt="">
                                     </div>
                                     <div class="img_item relative">
                                         <a href="#" class="wrap_link"></a>
-                                        <img src="../assets/images/Sunhouse.png" alt="">
+                                        <img src="./assets/images/Sunhouse.png" alt="">
                                     </div>
                                     <div class="img_item relative">
                                         <a href="#" class="wrap_link"></a>
-                                        <img src="../assets/images/logoVCCI.png" alt="">
+                                        <img src="./assets/images/logoVCCI.png" alt="">
                                     </div>
                                     <div class="img_item relative">
                                         <a href="#" class="wrap_link"></a>
-                                        <img src="../assets/images/Viettel.png" alt="">
+                                        <img src="./assets/images/Viettel.png" alt="">
                                     </div>
                                     <div class="img_item relative">
                                         <a href="#" class="wrap_link"></a>
-                                        <img src="../assets/images/Kangaroo.png" alt="">
+                                        <img src="./assets/images/Kangaroo.png" alt="">
                                     </div>
                                     <div class="img_item relative">
                                         <a href="#" class="wrap_link"></a>
-                                        <img src="../assets/images/ad27bc12ca81e862ceb35328122757ee.png" alt="">
+                                        <img src="./assets/images/ad27bc12ca81e862ceb35328122757ee.png" alt="">
                                     </div>
                                     <div class="img_item relative">
                                         <a href="#" class="wrap_link"></a>
-                                        <img src="../assets/images/BKhoa.png" alt="">
+                                        <img src="./assets/images/BKhoa.png" alt="">
                                     </div>
                                     <div class="img_item relative">
                                         <a href="#" class="wrap_link"></a>
-                                        <img src="../assets/images/78adbb044ee4cfa19a86de71e1544274a9c049ae.png" alt="">
+                                        <img src="./assets/images/78adbb044ee4cfa19a86de71e1544274a9c049ae.png" alt="">
                                     </div>
                                 </div>
                             </div>
@@ -998,115 +1056,115 @@
                                 <div class="marquee_img marquee_track" id="track4">
                                     <div class="img_item relative">
                                         <a href="#" class="wrap_link"></a>
-                                        <img src="../assets/images/27896eaa4a29ec81156ff13fdf3895680d7c805c.png" alt="">
+                                        <img src="./assets/images/27896eaa4a29ec81156ff13fdf3895680d7c805c.png" alt="">
                                     </div>
                                     <div class="img_item relative">
                                         <a href="#" class="wrap_link"></a>
-                                        <img src="../assets/images/logo-hoaphat.png" alt="">
+                                        <img src="./assets/images/logo-hoaphat.png" alt="">
                                     </div>
                                     <div class="img_item relative">
                                         <a href="#" class="wrap_link"></a>
-                                        <img src="../assets/images/vnpt-seeklogo.png" alt="">
+                                        <img src="./assets/images/vnpt-seeklogo.png" alt="">
                                     </div>
                                     <div class="img_item relative">
                                         <a href="#" class="wrap_link"></a>
-                                        <img src="../assets/images/CMC.png" alt="">
+                                        <img src="./assets/images/CMC.png" alt="">
                                     </div>
                                     <div class="img_item relative">
                                         <a href="#" class="wrap_link"></a>
-                                        <img src="../assets/images/logo-SONHA_DVTV-01.png" alt="">
+                                        <img src="./assets/images/logo-SONHA_DVTV-01.png" alt="">
                                     </div>
                                     <div class="img_item relative">
                                         <a href="#" class="wrap_link"></a>
-                                        <img src="../assets/images/TMU.png" alt="">
+                                        <img src="./assets/images/TMU.png" alt="">
                                     </div>
                                     <div class="img_item relative">
                                         <a href="#" class="wrap_link"></a>
-                                        <img src="../assets/images/VINECO.png" alt="">
+                                        <img src="./assets/images/VINECO.png" alt="">
                                     </div>
                                     <div class="img_item relative">
                                         <a href="#" class="wrap_link"></a>
-                                        <img src="../assets/images/GTVT.png" alt="">
+                                        <img src="./assets/images/GTVT.png" alt="">
                                     </div>
                                     <div class="img_item relative">
                                         <a href="#" class="wrap_link"></a>
-                                        <img src="../assets/images/4ed73bba9a181c3895cdefead42193309aac62e9.png" alt="">
+                                        <img src="./assets/images/4ed73bba9a181c3895cdefead42193309aac62e9.png" alt="">
                                     </div>
                                 </div>
                                 <div class="marquee_img marquee_track" id="track5">
                                     <div class="img_item relative">
                                         <a href="#" class="wrap_link"></a>
-                                        <img src="../assets/images/27896eaa4a29ec81156ff13fdf3895680d7c805c.png" alt="">
+                                        <img src="./assets/images/27896eaa4a29ec81156ff13fdf3895680d7c805c.png" alt="">
                                     </div>
                                     <div class="img_item relative">
                                         <a href="#" class="wrap_link"></a>
-                                        <img src="../assets/images/logo-hoaphat.png" alt="">
+                                        <img src="./assets/images/logo-hoaphat.png" alt="">
                                     </div>
                                     <div class="img_item relative">
                                         <a href="#" class="wrap_link"></a>
-                                        <img src="../assets/images/vnpt-seeklogo.png" alt="">
+                                        <img src="./assets/images/vnpt-seeklogo.png" alt="">
                                     </div>
                                     <div class="img_item relative">
                                         <a href="#" class="wrap_link"></a>
-                                        <img src="../assets/images/CMC.png" alt="">
+                                        <img src="./assets/images/CMC.png" alt="">
                                     </div>
                                     <div class="img_item relative">
                                         <a href="#" class="wrap_link"></a>
-                                        <img src="../assets/images/logo-SONHA_DVTV-01.png" alt="">
+                                        <img src="./assets/images/logo-SONHA_DVTV-01.png" alt="">
                                     </div>
                                     <div class="img_item relative">
                                         <a href="#" class="wrap_link"></a>
-                                        <img src="../assets/images/TMU.png" alt="">
+                                        <img src="./assets/images/TMU.png" alt="">
                                     </div>
                                     <div class="img_item relative">
                                         <a href="#" class="wrap_link"></a>
-                                        <img src="../assets/images/VINECO.png" alt="">
+                                        <img src="./assets/images/VINECO.png" alt="">
                                     </div>
                                     <div class="img_item relative">
                                         <a href="#" class="wrap_link"></a>
-                                        <img src="../assets/images/GTVT.png" alt="">
+                                        <img src="./assets/images/GTVT.png" alt="">
                                     </div>
                                     <div class="img_item relative">
                                         <a href="#" class="wrap_link"></a>
-                                        <img src="../assets/images/4ed73bba9a181c3895cdefead42193309aac62e9.png" alt="">
+                                        <img src="./assets/images/4ed73bba9a181c3895cdefead42193309aac62e9.png" alt="">
                                     </div>
                                 </div>
                                 <div class="marquee_img marquee_track" id="track6">
                                     <div class="img_item relative">
                                         <a href="#" class="wrap_link"></a>
-                                        <img src="../assets/images/logo-fpt-polytechnic.png" alt="">
+                                        <img src="./assets/images/logo-fpt-polytechnic.png" alt="">
                                     </div>
                                     <div class="img_item relative">
                                         <a href="#" class="wrap_link"></a>
-                                        <img src="../assets/images/logo-SONHA_DVTV-01.png" alt="">
+                                        <img src="./assets/images/logo-SONHA_DVTV-01.png" alt="">
                                     </div>
                                     <div class="img_item relative">
                                         <a href="#" class="wrap_link"></a>
-                                        <img src="../assets/images/Sunhouse.png" alt="">
+                                        <img src="./assets/images/Sunhouse.png" alt="">
                                     </div>
                                     <div class="img_item relative">
                                         <a href="#" class="wrap_link"></a>
-                                        <img src="../assets/images/logoVCCI.png" alt="">
+                                        <img src="./assets/images/logoVCCI.png" alt="">
                                     </div>
                                     <div class="img_item relative">
                                         <a href="#" class="wrap_link"></a>
-                                        <img src="../assets/images/Viettel.png" alt="">
+                                        <img src="./assets/images/Viettel.png" alt="">
                                     </div>
                                     <div class="img_item relative">
                                         <a href="#" class="wrap_link"></a>
-                                        <img src="../assets/images/Kangaroo.png" alt="">
+                                        <img src="./assets/images/Kangaroo.png" alt="">
                                     </div>
                                     <div class="img_item relative">
                                         <a href="#" class="wrap_link"></a>
-                                        <img src="../assets/images/ad27bc12ca81e862ceb35328122757ee.png" alt="">
+                                        <img src="./assets/images/ad27bc12ca81e862ceb35328122757ee.png" alt="">
                                     </div>
                                     <div class="img_item relative">
                                         <a href="#" class="wrap_link"></a>
-                                        <img src="../assets/images/BKhoa.png" alt="">
+                                        <img src="./assets/images/BKhoa.png" alt="">
                                     </div>
                                     <div class="img_item relative">
                                         <a href="#" class="wrap_link"></a>
-                                        <img src="../assets/images/78adbb044ee4cfa19a86de71e1544274a9c049ae.png" alt="">
+                                        <img src="./assets/images/78adbb044ee4cfa19a86de71e1544274a9c049ae.png" alt="">
                                     </div>
                                 </div>
                             </div>
@@ -1139,7 +1197,7 @@
                                 <div class="group_blog_insight flex">
                                     <div class="item_blog_insight_first no-overflow relative">
                                         <a href="#" class="wrap_link"></a>
-                                        <video src="../assets/images/as_937492742.mp4" autoplay muted playsinline loop></video>
+                                        <video src="./assets/images/as_937492742.mp4" autoplay muted playsinline loop></video>
                                         <div class="group_title_blog_insight">
                                             <h3 class="title fw-600 fs-25 lh-30 text-white mb-0 limit-line limit-5">
                                                 Willas Vietnam Signs Strategic Cooperation MOU with University of Transport and Communications
@@ -1179,7 +1237,7 @@
                                         </div>
                                         <div class="img-wrap ts-07">
                                             <a href="#">
-                                                <img src="../assets/images/6de52ed5f0fb39ce7a258dadf7ffe62ec69d5579-1.jpg" alt="">
+                                                <img src="./assets/images/6de52ed5f0fb39ce7a258dadf7ffe62ec69d5579-1.jpg" alt="">
                                             </a>
                                         </div>
                                     </div>
@@ -1207,7 +1265,7 @@
                                         </div>
                                         <div class="img-wrap ts-07">
                                             <a href="#">
-                                                <img src="../assets/images/6de52ed5f0fb39ce7a258dadf7ffe62ec69d5579-2.jpg" alt="">
+                                                <img src="./assets/images/6de52ed5f0fb39ce7a258dadf7ffe62ec69d5579-2.jpg" alt="">
                                             </a>
                                         </div>
                                     </div>
@@ -1217,7 +1275,7 @@
                                 <div class="group_blog_insight flex">
                                     <div class="item_blog_insight_first no-overflow relative">
                                         <a href="#" class="wrap_link"></a>
-                                        <video src="../assets/images/as_937492742.mp4" autoplay muted playsinline loop></video>
+                                        <video src="./assets/images/as_937492742.mp4" autoplay muted playsinline loop></video>
                                         <div class="group_title_blog_insight">
                                             <h3 class="title fw-600 fs-25 lh-30 text-white mb-0 limit-line limit-5">
                                                 Willas Vietnam Signs Strategic Cooperation MOU with University of Transport and Communications
@@ -1257,7 +1315,7 @@
                                         </div>
                                         <div class="img-wrap ts-07">
                                             <a href="#">
-                                                <img src="../assets/images/6de52ed5f0fb39ce7a258dadf7ffe62ec69d5579-1.jpg" alt="">
+                                                <img src="./assets/images/6de52ed5f0fb39ce7a258dadf7ffe62ec69d5579-1.jpg" alt="">
                                             </a>
                                         </div>
                                     </div>
@@ -1285,7 +1343,7 @@
                                         </div>
                                         <div class="img-wrap ts-07">
                                             <a href="#">
-                                                <img src="../assets/images/6de52ed5f0fb39ce7a258dadf7ffe62ec69d5579-2.jpg" alt="">
+                                                <img src="./assets/images/6de52ed5f0fb39ce7a258dadf7ffe62ec69d5579-2.jpg" alt="">
                                             </a>
                                         </div>
                                     </div>
@@ -1349,7 +1407,7 @@
             <div class="row aligns-center clearfix">
                 <div class="col large-3 medium-3 small-12">
                     <div class="logo_footer">
-                        <img src="../assets/images/logo-footer.svg" alt="">
+                        <img src="./assets/images/logo-footer.svg" alt="">
                         <h2 class="title style_color_1 lh-30 mb-0">
                             Willas Electronic Vietnam Co.,Ltd.
                         </h2>
@@ -1409,11 +1467,19 @@
         </div>
     </footer>
 
-    <script src="../assets/js/jquery.min.js"></script>
-    <script src="../assets/js/jquery-migrate.min.js"></script>
-    <script src="../assets/js/thuythu-core.min.js"></script>
-    <script src="../assets/js/frontend.js"></script>
+    <script src="./assets/js/jquery.min.js"></script>
+    <script src="./assets/js/jquery-migrate.min.js"></script>
+    <script src="./assets/js/thuythu-core.min.js"></script>
+    <script src="./assets/js/frontend.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+
+    <script src="./assets/js/SmoothScroll.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="./assets/js/waypoint.min.js"></script>
+    <script src="./assets/js/gsap.min.js"></script>
+
+
+
 </body>
 
 </html>
